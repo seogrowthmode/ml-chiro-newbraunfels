@@ -167,11 +167,7 @@ export default function HomePageContent() {
         <div className="container">
           <div className="service-healing__inner reveal">
             <div className="service-healing__photo">
-              <Image src="/images/clinic-content.png" alt="Chiropractic care at MaxLiving New Braunfels" width={500} height={400} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }} />
-              {/* service-healing photo */}
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>
-                Dr. Travis &mdash; Military Bearing, Warm Expression
-              </div>
+              <Image src="/images/clinic-content.png" alt="Dr. Travis Diestel - Military veteran chiropractor New Braunfels" width={500} height={400} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }} />
             </div>
             <div>
               <span className="eyebrow eyebrow--light">From Service to Healing</span>
