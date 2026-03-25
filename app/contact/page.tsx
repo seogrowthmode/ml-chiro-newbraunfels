@@ -54,7 +54,18 @@ export default function ContactPage() {
                 <div className="contact-block">
                   <p className="contact-block__label"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Visit Us</p>
                   <p className="contact-block__text">741 Generations Dr, Suite 200<br />New Braunfels, TX 78130</p>
-                  <div className="map-placeholder">Google Maps &mdash; New Braunfels</div>
+                  <div style={{ borderRadius: '12px', overflow: 'hidden', background: 'var(--stone)', aspectRatio: '16/9' }}>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.8!2d-98.1246!3d29.7193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s741+Generations+Dr+Suite+200+New+Braunfels+TX+78130!5e0!3m2!1sen!2sus!4v1"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0, display: 'block' }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="MaxLiving Chiropractic New Braunfels - Google Maps"
+                    />
+                  </div>
                 </div>
                 <div className="contact-block">
                   <p className="contact-block__label"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>Call Us</p>

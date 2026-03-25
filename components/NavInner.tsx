@@ -74,15 +74,13 @@ export default function NavInner({ variant = 'solid', activeLink }: NavInnerProp
 
   const navLinks = isHomepage
     ? [
-        { href: '/#empathy', label: 'Conditions' },
         { href: '/#team-split', label: 'Our Doctors' },
         { href: '/#services', label: 'Services', hasDropdown: true },
         { href: '/#essentials', label: '5 Essentials' },
         { href: '/#testimonials', label: 'Reviews' },
-        { href: '/#faq', label: 'FAQ' },
       ]
     : [
-        { href: '/about', label: 'Our Story' },
+        { href: '/about', label: 'About' },
         { href: '/team', label: 'Doctors' },
         { href: '/#services', label: 'Services', hasDropdown: true },
         { href: '/new-patient', label: 'New Patients' },
@@ -112,7 +110,7 @@ export default function NavInner({ variant = 'solid', activeLink }: NavInnerProp
                     style={activeLink === link.label ? { color: 'var(--gold)' } : undefined}
                     onClick={(e) => {
                       if (window.innerWidth <= 768) {
-                        e.preventDefault()
+                        e.preventDefault() // mobile nav toggle, not a form submit
                         setServicesOpen(!servicesOpen)
                       }
                     }}

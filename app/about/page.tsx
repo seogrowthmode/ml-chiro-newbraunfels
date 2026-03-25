@@ -4,6 +4,7 @@ import FooterInner from '@/components/FooterInner'
 import PageHero from '@/components/PageHero'
 import ConversionCTA from '@/components/ConversionCTA'
 import ScrollReveal from '@/components/ScrollReveal'
+import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
@@ -48,8 +49,9 @@ export default function AboutPage() {
               <p style={{ fontSize: '17px', color: 'var(--text-secondary)', lineHeight: 1.75, marginBottom: '16px' }}>They both enrolled at Parker University. They studied together, earned their Doctor of Chiropractic degrees together, and in 2020, they opened MaxLiving Chiropractic in New Braunfels -- a Hill Country town they chose because it felt like home.</p>
               <p style={{ fontSize: '17px', color: 'var(--charcoal)', lineHeight: 1.75, fontWeight: 600 }}>Today, Dr. Rachel focuses on what changed her life: prenatal and pediatric care. Dr. Travis brings military precision to corrective exercise and whole-body wellness. Together, they&apos;re not just business partners -- they&apos;re proof that chiropractic changes everything.</p>
             </div>
-            <div className="img-placeholder img-placeholder--landscape img-placeholder--editorial">
-              <span className="img-placeholder__label">Dr. Rachel &amp; Dr. Travis -- Their Story</span>
+            <div style={{ borderRadius: '18px', overflow: 'hidden', background: 'linear-gradient(135deg, var(--cream) 0%, var(--stone) 100%)', aspectRatio: '16/10', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 50%, rgba(45,42,38,0.15) 100%)' }} />
+              <Image src="/images/clinic-content.png" alt="Dr. Rachel and Dr. Travis Diestel - MaxLiving Chiropractic New Braunfels" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 45vw" />
             </div>
           </div>
         </div>
@@ -78,8 +80,9 @@ export default function AboutPage() {
       <section className="page-section page-section--stone">
         <div className="container">
           <div className="split split--45-55 reveal">
-            <div className="img-placeholder img-placeholder--landscape img-placeholder--warm">
-              <span className="img-placeholder__label">Community Workshop -- New Braunfels</span>
+            <div style={{ borderRadius: '18px', overflow: 'hidden', background: 'linear-gradient(135deg, var(--cream) 0%, var(--stone) 100%)', aspectRatio: '16/10', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 50%, rgba(45,42,38,0.15) 100%)' }} />
+              <Image src="/images/clinic-hero.png" alt="MaxLiving Chiropractic Community Workshop in New Braunfels" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 45vw" />
             </div>
             <div>
               <span className="eyebrow">Rooted in Community</span>

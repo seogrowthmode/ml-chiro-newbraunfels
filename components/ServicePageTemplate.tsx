@@ -53,8 +53,9 @@ export default function ServicePageTemplate(props: ServicePageProps) {
                 <p key={i} style={{ fontSize: '17px', color: 'var(--text-secondary)', lineHeight: 1.75, marginBottom: i < props.overviewParagraphs.length - 1 ? '16px' : 0 }}>{p}</p>
               ))}
             </div>
-            <div className="img-placeholder img-placeholder--portrait img-placeholder--editorial">
-              <span className="img-placeholder__label">{props.breadcrumbLabel}</span>
+            <div style={{ borderRadius: '18px', overflow: 'hidden', background: 'linear-gradient(135deg, var(--cream) 0%, var(--stone) 100%)', aspectRatio: '3/4', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 50%, rgba(45,42,38,0.15) 100%)' }} />
+              <p style={{ fontSize: '15px', fontWeight: 600, color: 'var(--text-secondary)', letterSpacing: '1px', textTransform: 'uppercase', opacity: 0.6, textAlign: 'center', padding: '24px' }}>{props.breadcrumbLabel}</p>
             </div>
           </div>
         </div>

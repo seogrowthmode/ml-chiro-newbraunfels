@@ -50,7 +50,10 @@ export default function ConditionPageTemplate(props: ConditionPageProps) {
               <h2 className="split__headline"><span className="line1">{props.overviewLine1}</span><span className="line2">{props.overviewLine2}</span></h2>
               {props.overviewParagraphs.map((p, i) => <p key={i} style={{ fontSize: '17px', color: i === props.overviewParagraphs.length - 1 ? 'var(--charcoal)' : 'var(--text-secondary)', lineHeight: 1.75, marginBottom: '16px', fontWeight: i === props.overviewParagraphs.length - 1 ? 600 : 400 }}>{p}</p>)}
             </div>
-            <div className="img-placeholder img-placeholder--landscape img-placeholder--editorial"><span className="img-placeholder__label">{props.breadcrumbLabel} Relief -- New Braunfels</span></div>
+            <div style={{ borderRadius: '18px', overflow: 'hidden', background: 'linear-gradient(135deg, var(--cream) 0%, var(--stone) 100%)', aspectRatio: '16/10', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 50%, rgba(45,42,38,0.15) 100%)' }} />
+              <p style={{ fontSize: '15px', fontWeight: 600, color: 'var(--text-secondary)', letterSpacing: '1px', textTransform: 'uppercase', opacity: 0.6, textAlign: 'center', padding: '24px' }}>{props.breadcrumbLabel} Relief -- New Braunfels</p>
+            </div>
           </div>
         </div>
       </section>

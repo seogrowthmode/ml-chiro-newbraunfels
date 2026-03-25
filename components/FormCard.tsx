@@ -1,6 +1,6 @@
 'use client'
 
-import { FormEvent } from 'react'
+import LeadForm from '@/components/LeadForm'
 
 interface FormCardProps {
   children: React.ReactNode
@@ -8,12 +8,9 @@ interface FormCardProps {
 }
 
 export function FormWrapper({ children, className }: FormCardProps) {
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault()
-  }
   return (
-    <form onSubmit={handleSubmit} className={className}>
+    <LeadForm className={className}>
       {children}
-    </form>
+    </LeadForm>
   )
 }

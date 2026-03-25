@@ -44,7 +44,7 @@ export default function HomepageClient() {
         if (!href) return
         const target = document.querySelector(href)
         if (target) {
-          e.preventDefault()
+          e.preventDefault() // smooth scroll handler, not form submit
           target.scrollIntoView({ behavior: 'smooth', block: 'start' })
           navMenu?.classList.remove('open')
         }
