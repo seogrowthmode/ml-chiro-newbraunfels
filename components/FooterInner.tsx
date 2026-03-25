@@ -26,14 +26,14 @@ export default function FooterInner({ variant = 'inner-full' }: FooterInnerProps
             </div>
             <div>
               <div className="footer__col-title">Services</div>
-              <Link href="/services/spinal-correction" className="footer__link">Chiropractic Adjustments</Link>
-              <Link href="/services/spinal-correction" className="footer__link">Advanced Spinal Correction</Link>
-              <Link href="/services/prenatal" className="footer__link">Prenatal Chiropractic</Link>
-              <Link href="/services/pediatric" className="footer__link">Pediatric Chiropractic</Link>
-              <Link href="/services/corrective-exercises" className="footer__link">Corrective Exercises</Link>
-              <Link href="/services/massage" className="footer__link">Massage Therapy</Link>
-              <Link href="/services/nutrition" className="footer__link">Nutritional Coaching</Link>
-              <Link href="/services/detox" className="footer__link">Detoxification</Link>
+              <Link href="/spinal-correction-new-braunfels" className="footer__link">Chiropractic Adjustments</Link>
+              <Link href="/spinal-correction-new-braunfels" className="footer__link">Advanced Spinal Correction</Link>
+              <Link href="/prenatal-chiropractic-care-new-braunfels" className="footer__link">Prenatal Chiropractic</Link>
+              <Link href="/pediatric-chiropractic-care-new-braunfels" className="footer__link">Pediatric Chiropractic</Link>
+              <Link href="/corrective-exercises-new-braunfels" className="footer__link">Corrective Exercises</Link>
+              <Link href="/massage-therapy-new-braunfels" className="footer__link">Massage Therapy</Link>
+              <Link href="/nutritional-coaching-new-braunfels" className="footer__link">Nutritional Coaching</Link>
+              <Link href="/detoxification-programs-new-braunfels" className="footer__link">Detoxification</Link>
             </div>
             <div>
               <div className="footer__col-title">Hours</div>
@@ -86,13 +86,13 @@ export default function FooterInner({ variant = 'inner-full' }: FooterInnerProps
           </div>
           <div>
             <p className="footer__col-title">Services</p>
-            <Link href="/services/spinal-correction" className="footer__link">Chiropractic Adjustments</Link>
-            <Link href="/services/prenatal" className="footer__link">Prenatal Chiropractic</Link>
-            <Link href="/services/pediatric" className="footer__link">Pediatric Chiropractic</Link>
-            <Link href="/services/corrective-exercises" className="footer__link">Corrective Exercises</Link>
-            <Link href="/services/nutrition" className="footer__link">Nutritional Coaching</Link>
-            <Link href="/services/massage" className="footer__link">Massage Therapy</Link>
-            <Link href="/services/detox" className="footer__link">Detoxification</Link>
+            <Link href="/spinal-correction-new-braunfels" className="footer__link">Chiropractic Adjustments</Link>
+            <Link href="/prenatal-chiropractic-care-new-braunfels" className="footer__link">Prenatal Chiropractic</Link>
+            <Link href="/pediatric-chiropractic-care-new-braunfels" className="footer__link">Pediatric Chiropractic</Link>
+            <Link href="/corrective-exercises-new-braunfels" className="footer__link">Corrective Exercises</Link>
+            <Link href="/nutritional-coaching-new-braunfels" className="footer__link">Nutritional Coaching</Link>
+            <Link href="/massage-therapy-new-braunfels" className="footer__link">Massage Therapy</Link>
+            <Link href="/detoxification-programs-new-braunfels" className="footer__link">Detoxification</Link>
           </div>
           {variant === 'inner-full' ? (
             <div>

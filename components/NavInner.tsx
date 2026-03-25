@@ -10,13 +10,13 @@ interface NavInnerProps {
 }
 
 const serviceItems = [
-  { href: '/services/spinal-correction', label: 'Spinal Correction' },
-  { href: '/services/prenatal', label: 'Prenatal Chiropractic' },
-  { href: '/services/pediatric', label: 'Pediatric Chiropractic' },
-  { href: '/services/nutrition', label: 'Nutrition' },
-  { href: '/services/corrective-exercises', label: 'Corrective Exercises' },
-  { href: '/services/massage', label: 'Massage Therapy' },
-  { href: '/services/detox', label: 'Detoxification' },
+  { href: '/spinal-correction-new-braunfels', label: 'Spinal Correction' },
+  { href: '/prenatal-chiropractic-care-new-braunfels', label: 'Prenatal Chiropractic' },
+  { href: '/pediatric-chiropractic-care-new-braunfels', label: 'Pediatric Chiropractic' },
+  { href: '/nutritional-coaching-new-braunfels', label: 'Nutrition' },
+  { href: '/corrective-exercises-new-braunfels', label: 'Corrective Exercises' },
+  { href: '/massage-therapy-new-braunfels', label: 'Massage Therapy' },
+  { href: '/detoxification-programs-new-braunfels', label: 'Detoxification' },
 ]
 
 export default function NavInner({ variant = 'solid', activeLink }: NavInnerProps) {
