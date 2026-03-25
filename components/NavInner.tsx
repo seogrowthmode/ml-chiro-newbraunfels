@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -9,7 +9,20 @@ interface NavInnerProps {
   activeLink?: string
 }
 
+const serviceItems = [
+  { href: '/services/spinal-correction', label: 'Spinal Correction' },
+  { href: '/services/prenatal', label: 'Prenatal Chiropractic' },
+  { href: '/services/pediatric', label: 'Pediatric Chiropractic' },
+  { href: '/services/nutrition', label: 'Nutrition' },
+  { href: '/services/corrective-exercises', label: 'Corrective Exercises' },
+  { href: '/services/massage', label: 'Massage Therapy' },
+  { href: '/services/detox', label: 'Detoxification' },
+]
+
 export default function NavInner({ variant = 'solid', activeLink }: NavInnerProps) {
+  const [servicesOpen, setServicesOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
     const nav = document.getElementById('nav')
     if (!nav) return
@@ -47,13 +60,23 @@ export default function NavInner({ variant = 'solid', activeLink }: NavInnerProp
     return () => toggle.removeEventListener('click', handleClick)
   }, [])
 
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setServicesOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
   const isHomepage = variant === 'homepage'
 
   const navLinks = isHomepage
     ? [
         { href: '/#empathy', label: 'Conditions' },
         { href: '/#team-split', label: 'Our Doctors' },
-        { href: '/#services', label: 'Services' },
+        { href: '/#services', label: 'Services', hasDropdown: true },
         { href: '/#essentials', label: '5 Essentials' },
         { href: '/#testimonials', label: 'Reviews' },
         { href: '/#faq', label: 'FAQ' },
@@ -61,7 +84,7 @@ export default function NavInner({ variant = 'solid', activeLink }: NavInnerProp
     : [
         { href: '/about', label: 'Our Story' },
         { href: '/team', label: 'Doctors' },
-        { href: '/#services', label: 'Services' },
+        { href: '/#services', label: 'Services', hasDropdown: true },
         { href: '/new-patient', label: 'New Patients' },
         { href: '/contact', label: 'Contact' },
       ]
@@ -75,14 +98,53 @@ export default function NavInner({ variant = 'solid', activeLink }: NavInnerProp
           </Link>
           <div className="nav__links">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="nav__link"
-                style={activeLink === link.label ? { color: 'var(--gold)' } : undefined}
-              >
-                {link.label}
-              </Link>
+              'hasDropdown' in link && link.hasDropdown ? (
+                <div
+                  key={link.href}
+                  className="nav__dropdown"
+                  ref={dropdownRef}
+                  onMouseEnter={() => setServicesOpen(true)}
+                  onMouseLeave={() => setServicesOpen(false)}
+                >
+                  <Link
+                    href={link.href}
+                    className="nav__link nav__link--dropdown"
+                    style={activeLink === link.label ? { color: 'var(--gold)' } : undefined}
+                    onClick={(e) => {
+                      if (window.innerWidth <= 768) {
+                        e.preventDefault()
+                        setServicesOpen(!servicesOpen)
+                      }
+                    }}
+                  >
+                    {link.label}
+                    <svg className="nav__dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M1 1l4 4 4-4" /></svg>
+                  </Link>
+                  {servicesOpen && (
+                    <div className="nav__dropdown-menu">
+                      {serviceItems.map((s) => (
+                        <Link
+                          key={s.href}
+                          href={s.href}
+                          className="nav__dropdown-item"
+                          onClick={() => setServicesOpen(false)}
+                        >
+                          {s.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="nav__link"
+                  style={activeLink === link.label ? { color: 'var(--gold)' } : undefined}
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
             <a href="tel:8302554350" className="nav__phone">(830) 255-4350</a>
             <Link href="/schedule" className="btn btn--gold nav__cta">Schedule Your Visit</Link>

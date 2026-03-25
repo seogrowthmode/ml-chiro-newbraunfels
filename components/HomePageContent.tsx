@@ -9,6 +9,17 @@ import PhoneFormatter from '@/components/PhoneFormatter'
 import HomepageClient from '@/components/HomepageClient'
 import LeadForm from '@/components/LeadForm'
 
+const svcImages: Record<string, { src: string; alt: string } | null> = {
+  'Adjustment Photo': { src: '/images/gallery-1.png', alt: 'Chiropractic adjustment at MaxLiving New Braunfels' },
+  'Spinal Correction Photo': { src: '/images/gallery-2.png', alt: 'Advanced spinal correction treatment' },
+  'Prenatal Care Photo': { src: '/images/gallery-3.png', alt: 'Prenatal chiropractic care' },
+  'Pediatric Care Photo': { src: '/images/gallery-4.png', alt: 'Pediatric chiropractic care' },
+  'Exercise Rehab Photo': { src: '/images/clinic-content.png', alt: 'Corrective exercise rehabilitation' },
+  'Massage Therapy Photo': null,
+  'Nutrition Photo': null,
+  'Detox Program Photo': null,
+}
+
 export default function HomePageContent() {
   return (
     <>
@@ -36,7 +47,7 @@ export default function HomePageContent() {
       <section className="hero">
         <div className="hero__dark">
           <div className="hero__dark-inner">
-            <span className="eyebrow eyebrow--light hero__label">Chiropractor in New Braunfels, TX</span>
+            <span className="eyebrow eyebrow--light hero__label">MaxLiving Chiropractic</span>
             <h1 className="hero__headline">
               <span className="line1">Chiropractor in</span>
               <span className="line2">New Braunfels, TX</span>
@@ -271,7 +282,13 @@ export default function HomePageContent() {
                       )}
                     </div>
                     <div className="svc-accordion__image">
-                      <div className="svc-accordion__image-placeholder">{svc.imgLabel}</div>
+                      {svcImages[svc.imgLabel] ? (
+                        <Image src={svcImages[svc.imgLabel]!.src} alt={svcImages[svc.imgLabel]!.alt} width={400} height={200} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      ) : (
+                        <div className="svc-accordion__image-gradient">
+                          <span>{svc.title}</span>
+                        </div>
+                      )}
                       {svc.href && <Link href={svc.href} className="svc-accordion__link" style={{ display: 'inline-block', marginTop: '12px', color: 'var(--gold)', fontWeight: 700, fontSize: '15px' }}>View Full Service Page &rarr;</Link>}
                     </div>
                   </div>
