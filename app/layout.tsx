@@ -15,13 +15,13 @@ const BASE_URL = 'https://ml-chiro-newbraunfels.vercel.app'
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'MaxLiving Chiropractic New Braunfels | Dr. Rachel & Dr. Travis Diestel',
-    template: '%s | MaxLiving Chiropractic New Braunfels',
+    default: 'Chiropractor New Braunfels TX | MaxLiving',
+    template: '%s | MaxLiving New Braunfels',
   },
   description: 'Husband-wife chiropractor team in New Braunfels, TX. Dr. Rachel specializes in prenatal & pediatric care. Dr. Travis, a US Army veteran, focuses on corrective exercise & military wellness. 5.0 Perfect Google Rating. (830) 255-4350.',
   alternates: { canonical: BASE_URL },
   openGraph: {
-    title: 'MaxLiving Chiropractic New Braunfels | Dr. Rachel & Dr. Travis Diestel',
+    title: 'Chiropractor New Braunfels TX | MaxLiving',
     description: 'Husband-wife chiropractor team in New Braunfels, TX. Prenatal, pediatric, corrective exercise, veteran care. 5.0 stars, 67 reviews. New Patient Special: $49.',
     url: BASE_URL,
     siteName: 'MaxLiving Chiropractic New Braunfels',

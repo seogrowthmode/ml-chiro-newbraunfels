@@ -8,11 +8,11 @@ import FaqAccordion from '@/components/FaqAccordion'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Meet the Doctors | MaxLiving Chiropractic - New Braunfels',
-  description: 'Meet Dr. Rachel and Dr. Travis Diestel -- a husband-wife chiropractic team in New Braunfels, TX. Prenatal, pediatric, corrective exercise, and veteran care.',
+  title: 'Meet the Doctors',
+  description: 'Meet Dr. Rachel and Dr. Travis Diestel -- husband-wife chiropractic team in New Braunfels, TX. Prenatal, pediatric, corrective exercise, and veteran care. Call (830) 255-4350.',
   alternates: { canonical: 'https://ml-chiro-newbraunfels.vercel.app/team' },
   openGraph: {
-    title: 'Meet the Doctors | MaxLiving Chiropractic - New Braunfels',
+    title: 'Meet the Doctors | MaxLiving New Braunfels',
     description: 'Meet Dr. Rachel and Dr. Travis Diestel. Prenatal, pediatric, corrective exercise, and veteran care.',
     url: 'https://ml-chiro-newbraunfels.vercel.app/team',
     siteName: 'MaxLiving Chiropractic New Braunfels',

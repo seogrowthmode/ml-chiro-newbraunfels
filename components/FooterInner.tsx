@@ -33,6 +33,7 @@ export default function FooterInner({ variant = 'inner-full' }: FooterInnerProps
               <Link href="/services/corrective-exercises" className="footer__link">Corrective Exercises</Link>
               <Link href="/services/massage" className="footer__link">Massage Therapy</Link>
               <Link href="/services/nutrition" className="footer__link">Nutritional Coaching</Link>
+              <Link href="/services/detox" className="footer__link">Detoxification</Link>
             </div>
             <div>
               <div className="footer__col-title">Hours</div>
@@ -65,7 +66,7 @@ export default function FooterInner({ variant = 'inner-full' }: FooterInnerProps
             </div>
           </div>
           <div className="footer__bottom">
-            <span>&copy; 2025 MaxLiving Chiropractic &ndash; New Braunfels. All rights reserved.</span>
+            <span>&copy; 2026 MaxLiving Chiropractic &ndash; New Braunfels. All rights reserved.</span>
             <span>CareCredit Accepted</span>
           </div>
         </div>
@@ -91,6 +92,7 @@ export default function FooterInner({ variant = 'inner-full' }: FooterInnerProps
             <Link href="/services/corrective-exercises" className="footer__link">Corrective Exercises</Link>
             <Link href="/services/nutrition" className="footer__link">Nutritional Coaching</Link>
             <Link href="/services/massage" className="footer__link">Massage Therapy</Link>
+            <Link href="/services/detox" className="footer__link">Detoxification</Link>
           </div>
           {variant === 'inner-full' ? (
             <div>
@@ -127,7 +129,7 @@ export default function FooterInner({ variant = 'inner-full' }: FooterInnerProps
           </div>
         </div>
         <div className="footer__bottom">
-          <p className="footer__copy">&copy; 2025 MaxLiving Chiropractic &ndash; New Braunfels &middot; CareCredit Accepted</p>
+          <p className="footer__copy">&copy; 2026 MaxLiving Chiropractic &ndash; New Braunfels &middot; CareCredit Accepted</p>
           <div className="footer__socials">
             <a href="#" className="footer__social" aria-label="Facebook"><FacebookIcon /></a>
             <a href="#" className="footer__social" aria-label="Instagram"><InstagramIcon /></a>

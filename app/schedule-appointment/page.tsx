@@ -5,11 +5,11 @@ import ScrollReveal from '@/components/ScrollReveal'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Book Online | MaxLiving Chiropractic - New Braunfels',
-  description: 'Book your appointment online with Dr. Rachel or Dr. Travis Diestel at MaxLiving Chiropractic New Braunfels. New patient special: $49.',
+  title: 'Book Online',
+  description: 'Book your chiropractic appointment online with Dr. Rachel or Dr. Travis Diestel in New Braunfels, TX. New patient special: $49. Call (830) 255-4350.',
   alternates: { canonical: 'https://ml-chiro-newbraunfels.vercel.app/schedule-appointment' },
   openGraph: {
-    title: 'Book Online | MaxLiving Chiropractic - New Braunfels',
+    title: 'Book Online | MaxLiving New Braunfels',
     description: 'Book your appointment online. New patient special: $49. Consultation, exam, X-rays if needed, and first adjustment.',
     url: 'https://ml-chiro-newbraunfels.vercel.app/schedule-appointment',
     siteName: 'MaxLiving Chiropractic New Braunfels',

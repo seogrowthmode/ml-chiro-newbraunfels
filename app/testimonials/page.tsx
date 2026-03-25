@@ -8,8 +8,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Testimonials | MaxLiving Chiropractic - New Braunfels',
-  description: 'Read real reviews from families in New Braunfels, San Marcos, and the Hill Country. 5.0 stars, 67 Google reviews. See what patients say about Dr. Rachel and Dr. Travis Diestel.',
+  title: 'Patient Reviews',
+  description: 'Read real reviews from families in New Braunfels, San Marcos, and the Hill Country. 5.0 stars, 67 Google reviews. See what patients say about Dr. Rachel and Dr. Travis.',
   alternates: { canonical: 'https://ml-chiro-newbraunfels.vercel.app/testimonials' },
   openGraph: {
     title: 'Patient Testimonials | MaxLiving Chiropractic - New Braunfels',
