@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface NavInnerProps {
   variant?: 'homepage' | 'solid'
@@ -70,11 +71,7 @@ export default function NavInner({ variant = 'solid', activeLink }: NavInnerProp
       <div className="container">
         <div className="nav__inner">
           <Link href="/" className="nav__brand">
-            {isHomepage ? (
-              <>Max<span>Living</span> &mdash; New Braunfels</>
-            ) : (
-              <>MaxLiving <span>New Braunfels</span></>
-            )}
+            <Image src="/images/maxliving-logo.svg" alt="MaxLiving Chiropractic New Braunfels" width={180} height={48} priority style={{ height: 'auto' }} />
           </Link>
           <div className="nav__links">
             {navLinks.map((link) => (

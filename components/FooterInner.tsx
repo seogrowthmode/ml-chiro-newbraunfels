@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface FooterInnerProps {
   variant?: 'homepage' | 'inner-full' | 'inner-hours'
@@ -19,7 +20,7 @@ export default function FooterInner({ variant = 'inner-full' }: FooterInnerProps
         <div className="container">
           <div className="footer__inner">
             <div>
-              <div className="footer__brand">Max<span>Living</span> &mdash; New Braunfels</div>
+              <div className="footer__brand"><Image src="/images/maxliving-logo.svg" alt="MaxLiving Chiropractic New Braunfels" width={160} height={44} style={{ height: 'auto' }} /></div>
               <p className="footer__tagline">Inspiring people to honor the wisdom of the body and live a life free from interference.</p>
               <div className="footer__franchise">MaxLiving Health Center</div>
             </div>
@@ -78,7 +79,7 @@ export default function FooterInner({ variant = 'inner-full' }: FooterInnerProps
       <div className="container">
         <div className="footer__grid">
           <div>
-            <p className="footer__brand-name">MaxLiving <span>New Braunfels</span></p>
+            <p className="footer__brand-name"><Image src="/images/maxliving-logo.svg" alt="MaxLiving Chiropractic New Braunfels" width={160} height={44} style={{ height: 'auto' }} /></p>
             <p className="footer__brand-tag">Inspiring people to honor the wisdom of the body and live a life free from interference.</p>
             <p className="footer__franchise">MaxLiving Health Center</p>
           </div>

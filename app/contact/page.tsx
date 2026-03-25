@@ -29,7 +29,7 @@ export default function ContactPage() {
                     <div className="form-field"><label htmlFor="c-lname">Last Name</label><input type="text" id="c-lname" name="lastName" placeholder="Last name" required /></div>
                   </div>
                   <div className="form-row">
-                    <div className="form-field"><label htmlFor="c-phone">Phone</label><input type="tel" id="c-phone" name="phone" className="phone-input" placeholder="(830) 555-0100" /></div>
+                    <div className="form-field"><label htmlFor="c-phone">Phone</label><input type="tel" id="c-phone" name="phone" className="phone-input" placeholder="(830) 255-4350" /></div>
                     <div className="form-field"><label htmlFor="c-email">Email</label><input type="email" id="c-email" name="email" placeholder="you@email.com" required /></div>
                   </div>
                   <div className="form-field" style={{ marginBottom: '12px' }}>

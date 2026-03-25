@@ -1,6 +1,7 @@
 'use client'
 
 import { FormEvent, useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 interface LeadFormProps {
   formId?: string
@@ -10,6 +11,7 @@ interface LeadFormProps {
 }
 
 export default function LeadForm({ formId, className, variant = 'homepage', children }: LeadFormProps) {
+  const router = useRouter()
   const [submitting, setSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState('')
@@ -59,6 +61,8 @@ export default function LeadForm({ formId, className, variant = 'homepage', chil
             name: `${body.firstName} ${body.lastName}`.trim(),
           }),
         }).catch(() => {})
+        // Redirect to confirmation/scheduling page
+        router.push('/schedule-appointment')
       } else {
         setError('Something went wrong. Please call us at (830) 255-4350.')
       }
