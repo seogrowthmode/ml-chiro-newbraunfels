@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import Grain from '@/components/Grain'
 import NavInner from '@/components/NavInner'
 import FooterInner from '@/components/FooterInner'
@@ -56,10 +57,7 @@ export default function HomePageContent() {
         </div>
         <div className="hero__light">
           <div className="hero__photo">
-            <div className="hero__photo-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>
-              Dr. Rachel &amp; Dr. Travis &mdash; Editorial Couple Portrait
-            </div>
+            <Image src="/images/clinic-hero.png" alt="Dr. Rachel Diestel and Dr. Travis Diestel - MaxLiving Chiropractic New Braunfels" width={600} height={500} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }} priority />
           </div>
         </div>
       </section>
@@ -169,7 +167,8 @@ export default function HomePageContent() {
         <div className="container">
           <div className="service-healing__inner reveal">
             <div className="service-healing__photo">
-              <div className="service-healing__photo-placeholder">
+              <Image src="/images/clinic-content.png" alt="Chiropractic care at MaxLiving New Braunfels" width={500} height={400} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }} />
+              {/* service-healing photo */}
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>
                 Dr. Travis &mdash; Military Bearing, Warm Expression
               </div>
@@ -198,10 +197,7 @@ export default function HomePageContent() {
           <div className="team-split__content reveal">
             <span className="eyebrow">Her Specialty</span>
             <div className="team-split__photo">
-              <div className="team-split__photo-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>
-                Dr. Rachel &mdash; Warm, Maternal, Professional
-              </div>
+              <Image src="/images/dr-rachel-diestel.png" alt="Dr. Rachel Diestel - Chiropractor New Braunfels TX" width={400} height={500} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }} />
             </div>
             <h3 className="team-split__name">Dr. Rachel Diestel, D.C.</h3>
             <p className="team-split__creds">Parker University &middot; Prenatal &middot; Pediatric &middot; Pre/Peri-Natal Certified</p>
@@ -219,10 +215,7 @@ export default function HomePageContent() {
           <div className="team-split__content reveal">
             <span className="eyebrow eyebrow--charcoal">His Strength</span>
             <div className="team-split__photo">
-              <div className="team-split__photo-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>
-                Dr. Travis &mdash; Strong, Confident, Warm
-              </div>
+              <Image src="/images/dr-travis-diestel.png" alt="Dr. Travis Diestel - Chiropractor New Braunfels TX" width={400} height={500} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }} />
             </div>
             <h3 className="team-split__name">Dr. Travis Diestel, D.C.</h3>
             <p className="team-split__creds">Parker University &middot; US Army 5 Years &middot; CPT &middot; Corrective Exercise Specialist &middot; Level 2 Activator</p>
@@ -362,7 +355,7 @@ export default function HomePageContent() {
               <a href="#form-section" className="btn btn--gold">Schedule Your Visit &rarr;</a>
             </div>
             <div className="results__image reveal" style={{ transitionDelay: '.15s' }}>
-              <div className="results__image-placeholder">Family at Landa Park &mdash; Golden Hour &mdash; Hill Country Life</div>
+              <Image src="/images/clinic-arch.jpeg" alt="MaxLiving Chiropractic New Braunfels clinic" width={600} height={400} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }} />
             </div>
           </div>
         </div>
