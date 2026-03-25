@@ -10,6 +10,14 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Testimonials | MaxLiving Chiropractic - New Braunfels',
   description: 'Read real reviews from families in New Braunfels, San Marcos, and the Hill Country. 5.0 stars, 67 Google reviews. See what patients say about Dr. Rachel and Dr. Travis Diestel.',
+  alternates: { canonical: 'https://ml-chiro-newbraunfels.vercel.app/testimonials' },
+  openGraph: {
+    title: 'Patient Testimonials | MaxLiving Chiropractic - New Braunfels',
+    description: '5.0 stars, 67 Google reviews. Real stories from families in New Braunfels and the Hill Country.',
+    url: 'https://ml-chiro-newbraunfels.vercel.app/testimonials',
+    siteName: 'MaxLiving Chiropractic New Braunfels',
+    type: 'website',
+  },
 }
 
 const reviews = [

@@ -7,6 +7,7 @@ import ConversionCTA from '@/components/ConversionCTA'
 import ScrollReveal from '@/components/ScrollReveal'
 import PhoneFormatter from '@/components/PhoneFormatter'
 import FaqAccordion from '@/components/FaqAccordion'
+import LeadForm from '@/components/LeadForm'
 import Link from 'next/link'
 
 export default function ContactPage() {
@@ -22,10 +23,10 @@ export default function ContactPage() {
             <div>
               <div className="form-card">
                 <p className="form-card__title" style={{ fontSize: '22px', fontWeight: 800, color: 'var(--charcoal)', marginBottom: '20px', letterSpacing: 0, textTransform: 'none' }}>Send Us a Message</p>
-                <form onSubmit={(e) => e.preventDefault()}>
+                <LeadForm>
                   <div className="form-row">
-                    <div className="form-field"><label htmlFor="c-fname">First Name</label><input type="text" id="c-fname" name="first_name" placeholder="First name" required /></div>
-                    <div className="form-field"><label htmlFor="c-lname">Last Name</label><input type="text" id="c-lname" name="last_name" placeholder="Last name" required /></div>
+                    <div className="form-field"><label htmlFor="c-fname">First Name</label><input type="text" id="c-fname" name="firstName" placeholder="First name" required /></div>
+                    <div className="form-field"><label htmlFor="c-lname">Last Name</label><input type="text" id="c-lname" name="lastName" placeholder="Last name" required /></div>
                   </div>
                   <div className="form-row">
                     <div className="form-field"><label htmlFor="c-phone">Phone</label><input type="tel" id="c-phone" name="phone" className="phone-input" placeholder="(830) 555-0100" /></div>
@@ -33,7 +34,7 @@ export default function ContactPage() {
                   </div>
                   <div className="form-field" style={{ marginBottom: '12px' }}>
                     <label htmlFor="c-doctor">Preferred Doctor</label>
-                    <select id="c-doctor" name="preferred_doctor"><option value="no-preference">No Preference</option><option value="dr-rachel">Dr. Rachel Diestel</option><option value="dr-travis">Dr. Travis Diestel</option></select>
+                    <select id="c-doctor" name="doctor"><option value="no-preference">No Preference</option><option value="dr-rachel">Dr. Rachel Diestel</option><option value="dr-travis">Dr. Travis Diestel</option></select>
                   </div>
                   <div className="form-field" style={{ marginBottom: '12px' }}>
                     <label htmlFor="c-reason">Reason for Visit</label>
@@ -45,7 +46,7 @@ export default function ContactPage() {
                   </div>
                   <button type="submit" className="form-submit">Send Message &rarr;</button>
                   <p className="form-note">We&apos;ll respond within 24 hours.</p>
-                </form>
+                </LeadForm>
               </div>
             </div>
             <div>

@@ -5,6 +5,7 @@ import FooterInner from '@/components/FooterInner'
 import PageHero from '@/components/PageHero'
 import ScrollReveal from '@/components/ScrollReveal'
 import PhoneFormatter from '@/components/PhoneFormatter'
+import LeadForm from '@/components/LeadForm'
 
 export default function SchedulePage() {
   return (
@@ -25,16 +26,16 @@ export default function SchedulePage() {
             <span className="eyebrow reveal">Book Your Appointment</span>
             <div className="form-card form-card--gold reveal" data-delay="100">
               <p className="form-card__title" style={{ fontSize: '24px', fontWeight: 800, color: 'var(--charcoal)', marginBottom: '6px', letterSpacing: 0, textTransform: 'none' }}>New Patient Appointment</p>
-              <p className="form-card__subtitle">New Patient Special &mdash; [Price &mdash; Confirm]</p>
-              <form onSubmit={(e) => e.preventDefault()}>
-                <div className="form-row"><div className="form-field"><label>First Name</label><input type="text" placeholder="Jane" required /></div><div className="form-field"><label>Last Name</label><input type="text" placeholder="Doe" required /></div></div>
-                <div className="form-row"><div className="form-field"><label>Phone</label><input type="tel" className="phone-input" placeholder="(830) 555-1234" required /></div><div className="form-field"><label>Email</label><input type="email" placeholder="jane@email.com" required /></div></div>
-                <div className="form-row"><div className="form-field form-field--full"><label>Preferred Doctor</label><select><option value="">No Preference</option><option value="rachel">Dr. Rachel Diestel &mdash; Prenatal, Pediatric</option><option value="travis">Dr. Travis Diestel &mdash; Corrective Exercise, Military</option></select></div></div>
-                <div className="form-row"><div className="form-field form-field--full"><label>Reason for Visit</label><select required><option value="">Select a reason...</option><option value="general">General Chiropractic</option><option value="back-pain">Back Pain</option><option value="neck-pain">Neck Pain</option><option value="headaches">Headaches / Migraines</option><option value="prenatal">Prenatal Care</option><option value="pediatric">Pediatric Care</option><option value="sciatica">Sciatica</option><option value="military">Military / First Responder Wellness</option><option value="corrective">Corrective Exercise</option><option value="nutrition">Nutrition Coaching</option><option value="other">Other</option></select></div></div>
-                <div className="form-row"><div className="form-field form-field--full"><label>Preferred Day</label><select><option value="">No Preference</option><option value="monday">Monday</option><option value="tuesday">Tuesday</option><option value="wednesday">Wednesday</option><option value="thursday">Thursday</option></select></div></div>
-                <div className="form-row"><div className="form-field form-field--full"><label>Additional Notes</label><textarea placeholder="Anything else we should know? Previous injuries, concerns, questions..."></textarea></div></div>
+              <p className="form-card__subtitle">New Patient Special &mdash; $49</p>
+              <LeadForm>
+                <div className="form-row"><div className="form-field"><label>First Name</label><input type="text" name="firstName" placeholder="Jane" required /></div><div className="form-field"><label>Last Name</label><input type="text" name="lastName" placeholder="Doe" required /></div></div>
+                <div className="form-row"><div className="form-field"><label>Phone</label><input type="tel" name="phone" className="phone-input" placeholder="(830) 555-1234" required /></div><div className="form-field"><label>Email</label><input type="email" name="email" placeholder="jane@email.com" required /></div></div>
+                <div className="form-row"><div className="form-field form-field--full"><label>Preferred Doctor</label><select name="doctor"><option value="">No Preference</option><option value="rachel">Dr. Rachel Diestel -- Prenatal, Pediatric</option><option value="travis">Dr. Travis Diestel -- Corrective Exercise, Military</option></select></div></div>
+                <div className="form-row"><div className="form-field form-field--full"><label>Reason for Visit</label><select name="reason" required><option value="">Select a reason...</option><option value="general">General Chiropractic</option><option value="back-pain">Back Pain</option><option value="neck-pain">Neck Pain</option><option value="headaches">Headaches / Migraines</option><option value="prenatal">Prenatal Care</option><option value="pediatric">Pediatric Care</option><option value="sciatica">Sciatica</option><option value="military">Military / First Responder Wellness</option><option value="corrective">Corrective Exercise</option><option value="nutrition">Nutrition Coaching</option><option value="other">Other</option></select></div></div>
+                <div className="form-row"><div className="form-field form-field--full"><label>Preferred Day</label><select name="preferred_day"><option value="">No Preference</option><option value="monday">Monday</option><option value="tuesday">Tuesday</option><option value="wednesday">Wednesday</option><option value="thursday">Thursday</option></select></div></div>
+                <div className="form-row"><div className="form-field form-field--full"><label>Additional Notes</label><textarea name="message" placeholder="Anything else we should know? Previous injuries, concerns, questions..."></textarea></div></div>
                 <button className="form-submit form-submit--lg" type="submit">Book My Visit &rarr;</button>
-              </form>
+              </LeadForm>
               <p className="form-note">We&apos;ll confirm your appointment within 24 hours. CareCredit accepted.</p>
             </div>
           </div>

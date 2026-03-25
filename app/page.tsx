@@ -6,6 +6,7 @@ import FooterInner from '@/components/FooterInner'
 import ScrollReveal from '@/components/ScrollReveal'
 import PhoneFormatter from '@/components/PhoneFormatter'
 import HomepageClient from '@/components/HomepageClient'
+import LeadForm from '@/components/LeadForm'
 
 export default function HomePage() {
   return (
@@ -91,16 +92,16 @@ export default function HomePage() {
             </div>
             <div className="form-card">
               <div className="form-card__title">New Patient Special</div>
-              <div className="form-card__price">[Price &mdash; Confirm]</div>
-              <form id="patientForm" onSubmit={(e) => e.preventDefault()}>
+              <div className="form-card__price">$49</div>
+              <LeadForm formId="patientForm">
                 <div className="form-card__row">
                   <div className="form-card__field">
                     <label htmlFor="fname">First Name</label>
-                    <input type="text" id="fname" name="fname" placeholder="First name" required />
+                    <input type="text" id="fname" name="firstName" placeholder="First name" required />
                   </div>
                   <div className="form-card__field">
                     <label htmlFor="lname">Last Name</label>
-                    <input type="text" id="lname" name="lname" placeholder="Last name" required />
+                    <input type="text" id="lname" name="lastName" placeholder="Last name" required />
                   </div>
                 </div>
                 <div className="form-card__row">
@@ -122,7 +123,7 @@ export default function HomePage() {
                   </select>
                 </div>
                 <button type="submit" className="btn btn--charcoal form-card__submit">Book My Visit &rarr;</button>
-              </form>
+              </LeadForm>
               <p className="form-card__note">CareCredit accepted</p>
             </div>
           </div>

@@ -10,6 +10,14 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About Us | MaxLiving Chiropractic - New Braunfels',
   description: 'Dr. Rachel and Dr. Travis Diestel -- a husband-wife chiropractor team in New Braunfels, TX. His journey started by watching hers. Learn our story.',
+  alternates: { canonical: 'https://ml-chiro-newbraunfels.vercel.app/about' },
+  openGraph: {
+    title: 'About Us | MaxLiving Chiropractic - New Braunfels',
+    description: 'Dr. Rachel and Dr. Travis Diestel -- husband-wife chiropractor team. His journey started by watching hers.',
+    url: 'https://ml-chiro-newbraunfels.vercel.app/about',
+    siteName: 'MaxLiving Chiropractic New Braunfels',
+    type: 'website',
+  },
 }
 
 export default function AboutPage() {

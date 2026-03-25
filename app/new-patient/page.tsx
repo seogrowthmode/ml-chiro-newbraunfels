@@ -7,6 +7,7 @@ import ConversionCTA from '@/components/ConversionCTA'
 import ScrollReveal from '@/components/ScrollReveal'
 import PhoneFormatter from '@/components/PhoneFormatter'
 import FaqAccordion from '@/components/FaqAccordion'
+import LeadForm from '@/components/LeadForm'
 import Link from 'next/link'
 
 const faqItems = [
@@ -44,7 +45,7 @@ export default function NewPatientPage() {
       <section className="page-section page-section--charcoal">
         <div className="container" style={{ textAlign: 'center', maxWidth: '720px' }}>
           <span className="eyebrow reveal">New Patient Special</span>
-          <p className="reveal" style={{ fontSize: '56px', fontWeight: 900, color: 'var(--gold)', marginBottom: '12px', lineHeight: 1.1 }}>[PRICE &mdash; CONFIRM]</p>
+          <p className="reveal" style={{ fontSize: '56px', fontWeight: 900, color: 'var(--gold)', marginBottom: '12px', lineHeight: 1.1 }}>$49</p>
           <p className="reveal" style={{ fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>Includes consultation, comprehensive exam, X-rays (if needed), and your first adjustment.</p>
           <p className="reveal" style={{ fontSize: '14px', fontWeight: 600, letterSpacing: '.5px', marginBottom: '36px', opacity: .55 }}>CareCredit accepted &middot; Most insurance welcome</p>
           <div className="reveal"><Link href="/schedule" className="btn btn--gold">Book My First Visit &rarr;</Link></div>
@@ -90,13 +91,13 @@ export default function NewPatientPage() {
             </div>
             <div className="form-card">
               <p className="form-card__title" style={{ fontSize: '22px', fontWeight: 800, color: 'var(--charcoal)', marginBottom: '20px', letterSpacing: 0, textTransform: 'none' }}>Verify Your Benefits</p>
-              <form onSubmit={(e) => e.preventDefault()}>
-                <div className="form-row"><div className="form-field"><label>First Name</label><input type="text" placeholder="First name" required /></div><div className="form-field"><label>Last Name</label><input type="text" placeholder="Last name" required /></div></div>
-                <div className="form-row"><div className="form-field"><label>Phone</label><input type="tel" className="phone-input" placeholder="(555) 555-5555" required /></div><div className="form-field"><label>Email</label><input type="email" placeholder="you@email.com" required /></div></div>
-                <div className="form-row"><div className="form-field form-field--full"><label>Insurance Provider</label><input type="text" placeholder="e.g. Blue Cross, Aetna, United" /></div></div>
-                <div className="form-row"><div className="form-field form-field--full"><label>Preferred Doctor</label><select><option value="no-preference">No Preference</option><option value="dr-rachel">Dr. Rachel Diestel</option><option value="dr-travis">Dr. Travis Diestel</option></select></div></div>
+              <LeadForm>
+                <div className="form-row"><div className="form-field"><label>First Name</label><input type="text" name="firstName" placeholder="First name" required /></div><div className="form-field"><label>Last Name</label><input type="text" name="lastName" placeholder="Last name" required /></div></div>
+                <div className="form-row"><div className="form-field"><label>Phone</label><input type="tel" name="phone" className="phone-input" placeholder="(555) 555-5555" required /></div><div className="form-field"><label>Email</label><input type="email" name="email" placeholder="you@email.com" required /></div></div>
+                <div className="form-row"><div className="form-field form-field--full"><label>Insurance Provider</label><input type="text" name="insuranceProvider" placeholder="e.g. Blue Cross, Aetna, United" /></div></div>
+                <div className="form-row"><div className="form-field form-field--full"><label>Preferred Doctor</label><select name="doctor"><option value="no-preference">No Preference</option><option value="dr-rachel">Dr. Rachel Diestel</option><option value="dr-travis">Dr. Travis Diestel</option></select></div></div>
                 <button type="submit" className="form-submit">Check My Coverage &rarr;</button>
-              </form>
+              </LeadForm>
               <p className="form-note">We&apos;ll contact you within 24 hours.</p>
             </div>
           </div>
