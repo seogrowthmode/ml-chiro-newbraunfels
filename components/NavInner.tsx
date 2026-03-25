@@ -74,10 +74,12 @@ export default function NavInner({ variant = 'solid', activeLink }: NavInnerProp
 
   const navLinks = isHomepage
     ? [
+        { href: '/#empathy', label: 'Conditions' },
         { href: '/#team-split', label: 'Our Doctors' },
         { href: '/#services', label: 'Services', hasDropdown: true },
         { href: '/#essentials', label: '5 Essentials' },
         { href: '/#testimonials', label: 'Reviews' },
+        { href: '/#faq', label: 'FAQ' },
       ]
     : [
         { href: '/about', label: 'About' },

@@ -58,7 +58,7 @@ ul{list-style:none}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
 /* ═══════════ NAV ═══════════ */
-.nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:18px 0;transition:all .4s ease}
+.nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:18px 0;transition:all .4s ease;background:rgba(249,244,241,.96);backdrop-filter:blur(16px);box-shadow:0 2px 20px rgba(0,0,0,.06)}
 .nav--solid{background:rgba(249,244,241,.96);backdrop-filter:blur(16px);box-shadow:0 2px 20px rgba(0,0,0,.06)}
 .nav--solid .nav__brand{color:var(--charcoal)}
 .nav--solid .nav__link{color:var(--text-primary)}
@@ -71,16 +71,16 @@ ul{list-style:none}
 .nav.scrolled .nav__dropdown-arrow{stroke:var(--text-primary)}
 .nav--solid .nav__dropdown-arrow{stroke:var(--text-primary)}
 .nav__inner{display:flex;align-items:center;justify-content:space-between}
-.nav__brand{font-size:17px;font-weight:800;color:var(--text-light);transition:color .4s ease;white-space:nowrap}
+.nav__brand{font-size:17px;font-weight:800;color:var(--charcoal);transition:color .4s ease;white-space:nowrap}
 .nav__brand span{color:var(--gold)}
 .nav__links{display:flex;align-items:center;gap:32px}
-.nav__link{font-size:14px;font-weight:600;color:var(--text-light);transition:color .3s ease;letter-spacing:.3px}
+.nav__link{font-size:14px;font-weight:600;color:var(--text-primary);transition:color .3s ease;letter-spacing:.3px}
 .nav__link:hover{color:var(--gold)}
 .nav__link--active{color:var(--gold)}
-.nav__phone{font-size:14px;font-weight:700;color:var(--text-light);transition:color .4s ease}
+.nav__phone{font-size:14px;font-weight:700;color:var(--charcoal);transition:color .4s ease}
 .nav__cta{padding:12px 28px;font-size:13px}
 .nav__toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer}
-.nav__toggle span{display:block;width:24px;height:2px;background:var(--text-light);transition:all .3s ease}
+.nav__toggle span{display:block;width:24px;height:2px;background:var(--charcoal);transition:all .3s ease}
 
 /* NAV DROPDOWN */
 .nav__dropdown{position:relative;display:flex;align-items:center}
