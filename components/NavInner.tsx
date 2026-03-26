@@ -21,6 +21,7 @@ const serviceItems = [
 
 export default function NavInner({ variant = 'solid', activeLink }: NavInnerProps) {
   const [servicesOpen, setServicesOpen] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -32,32 +33,6 @@ export default function NavInner({ variant = 'solid', activeLink }: NavInnerProp
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  useEffect(() => {
-    const toggle = document.getElementById('navToggle')
-    if (!toggle) return
-
-    const handleClick = () => {
-      const links = document.querySelector('.nav__links') as HTMLElement
-      if (!links) return
-      if (links.style.display === 'flex') {
-        links.style.display = 'none'
-      } else {
-        links.style.display = 'flex'
-        links.style.flexDirection = 'column'
-        links.style.position = 'absolute'
-        links.style.top = '100%'
-        links.style.left = '0'
-        links.style.right = '0'
-        links.style.background = 'rgba(249,244,241,.98)'
-        links.style.padding = '24px'
-        links.style.gap = '16px'
-        links.style.boxShadow = '0 8px 24px rgba(0,0,0,.08)'
-      }
-    }
-    toggle.addEventListener('click', handleClick)
-    return () => toggle.removeEventListener('click', handleClick)
   }, [])
 
   useEffect(() => {
@@ -96,7 +71,7 @@ export default function NavInner({ variant = 'solid', activeLink }: NavInnerProp
           <Link href="/" className="nav__brand">
             <Image src="/images/maxliving-logo.svg" alt="MaxLiving Chiropractic New Braunfels" width={180} height={48} priority style={{ height: 'auto' }} />
           </Link>
-          <div className="nav__links">
+          <div className={`nav__links${mobileOpen ? ' nav__links--open' : ''}`}>
             {navLinks.map((link) => (
               'hasDropdown' in link && link.hasDropdown ? (
                 <div
@@ -141,6 +116,7 @@ export default function NavInner({ variant = 'solid', activeLink }: NavInnerProp
                   href={link.href}
                   className="nav__link"
                   style={activeLink === link.label ? { color: 'var(--gold)' } : undefined}
+                  onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
                 </Link>
@@ -149,7 +125,7 @@ export default function NavInner({ variant = 'solid', activeLink }: NavInnerProp
             <a href="tel:8302554350" className="nav__phone">(830) 255-4350</a>
             <Link href="/schedule" className="btn btn--gold nav__cta">Schedule Your Visit</Link>
           </div>
-          <button className="nav__toggle" id="navToggle" aria-label="Menu">
+          <button className="nav__toggle" id="navToggle" aria-label="Menu" onClick={() => setMobileOpen(!mobileOpen)}>
             <span></span><span></span><span></span>
           </button>
         </div>

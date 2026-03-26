@@ -667,7 +667,9 @@ ul{list-style:none}
 @media(max-width:768px){
   :root{--pad:32px}
   .nav__links{display:none}
+  .nav__links--open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(249,244,241,.98);padding:24px;gap:16px;box-shadow:0 8px 24px rgba(0,0,0,.08);z-index:100}
   .nav__phone{display:none}
+  .nav__links--open .nav__phone{display:block}
   .nav__toggle{display:flex}
   .nav__dropdown-menu{position:static;transform:none;min-width:auto;box-shadow:none;background:transparent;padding:0 0 0 16px;margin-top:0}
   .nav__dropdown-item{padding:6px 0;font-size:13px}
