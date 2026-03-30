@@ -11,11 +11,11 @@ import LeadForm from '@/components/LeadForm'
 
 const svcImages: Record<string, { src: string; alt: string } | null> = {
   'Adjustment Photo': { src: '/images/gallery-1.png', alt: 'Chiropractic adjustment at MaxLiving New Braunfels' },
-  'Spinal Correction Photo': { src: '/images/gallery-2.png', alt: 'Advanced spinal correction treatment' },
+  'Spinal Correction Photo': { src: '/images/gallery-2.png', alt: 'Advanced spinal correction at MaxLiving New Braunfels' },
   'Prenatal Care Photo': { src: '/images/gallery-3.png', alt: 'Prenatal chiropractic care' },
   'Pediatric Care Photo': { src: '/images/gallery-4.png', alt: 'Pediatric chiropractic care' },
   'Exercise Rehab Photo': { src: '/images/clinic-content.png', alt: 'Corrective exercise rehabilitation' },
-  'Massage Therapy Photo': null,
+  // Massage Therapy removed per client request
   'Nutrition Photo': null,
   'Detox Program Photo': null,
 }
@@ -83,7 +83,7 @@ export default function HomePageContent() {
                 <span className="line1">Family Chiropractor in</span>
                 <span className="line2">New Braunfels</span>
               </h2>
-              <p className="form-section__text">Dr. Rachel specializes in prenatal and pediatric care. Dr. Travis brings military discipline and corrective exercise expertise. Together &mdash; every age, every condition.</p>
+              <p className="form-section__text">Both Dr. Rachel and Dr. Travis are certified in structural correction, prenatal care, and pediatric care. Together &mdash; every age, every condition.</p>
               <div className="form-section__checks">
                 <div className="form-section__check">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M4.5 12.75l6 6 9-13.5" /></svg>
@@ -101,7 +101,7 @@ export default function HomePageContent() {
             </div>
             <div className="form-card">
               <div className="form-card__title">New Patient Special</div>
-              <div className="form-card__price">$49</div>
+              <div className="form-card__price">$185</div>
               <LeadForm formId="patientForm">
                 <div className="form-card__row">
                   <div className="form-card__field">
@@ -145,7 +145,7 @@ export default function HomePageContent() {
           <div className="empathy__header reveal">
             <span className="eyebrow">You&apos;re Not Alone in This</span>
             <h2 className="empathy__headline">
-              <span className="line1">Conditions We Treat in</span>
+              <span className="line1">Conditions We Help With in</span>
               <span className="line2">New Braunfels, TX</span>
             </h2>
           </div>
@@ -202,14 +202,15 @@ export default function HomePageContent() {
         <div className="team-split__divider"></div>
         <div className="team-split__half team-split__half--rachel">
           <div className="team-split__content reveal">
-            <span className="eyebrow">Her Specialty</span>
+            <span className="eyebrow">Dr. Rachel</span>
             <div className="team-split__photo">
               <Image src="/images/dr-rachel-diestel.png" alt="Dr. Rachel Diestel - Chiropractor New Braunfels TX" width={400} height={500} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }} />
             </div>
             <h3 className="team-split__name">Dr. Rachel Diestel, D.C.</h3>
-            <p className="team-split__creds">Parker University &middot; Prenatal &middot; Pediatric &middot; Pre/Peri-Natal Certified</p>
+            <p className="team-split__creds">Parker University &middot; Structural Correction &middot; Prenatal &middot; Pediatric &middot; Pre/Peri-Natal Certified</p>
             <p className="team-split__bio">Rachel overcame kidney and reproductive health challenges through chiropractic. That transformation became her mission: help every mother, child, and family reclaim their health.</p>
             <div className="team-split__tags">
+              <span className="team-split__tag">Structural Correction</span>
               <span className="team-split__tag">Prenatal</span>
               <span className="team-split__tag">Pediatric</span>
               <span className="team-split__tag">Nutrition</span>
@@ -220,17 +221,18 @@ export default function HomePageContent() {
         </div>
         <div className="team-split__half team-split__half--travis">
           <div className="team-split__content reveal">
-            <span className="eyebrow eyebrow--charcoal">His Strength</span>
+            <span className="eyebrow eyebrow--charcoal">Dr. Travis</span>
             <div className="team-split__photo">
               <Image src="/images/dr-travis-diestel.png" alt="Dr. Travis Diestel - Chiropractor New Braunfels TX" width={400} height={500} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }} />
             </div>
             <h3 className="team-split__name">Dr. Travis Diestel, D.C.</h3>
-            <p className="team-split__creds">Parker University &middot; US Army 5 Years &middot; CPT &middot; Corrective Exercise Specialist &middot; Level 2 Activator</p>
+            <p className="team-split__creds">Parker University &middot; US Army 5 Years &middot; Structural Correction &middot; Prenatal &middot; Pediatric &middot; Corrective Exercise &middot; Level 2 Activator</p>
             <p className="team-split__bio">Travis watched Rachel heal. He left the Army. He found his calling. Now he brings that same discipline to corrective care, exercise rehabilitation, and military/first responder wellness.</p>
             <div className="team-split__tags">
-              <span className="team-split__tag">Spinal Correction</span>
+              <span className="team-split__tag">Structural Correction</span>
+              <span className="team-split__tag">Prenatal</span>
+              <span className="team-split__tag">Pediatric</span>
               <span className="team-split__tag">Corrective Exercise</span>
-              <span className="team-split__tag">Military/First Responder</span>
               <span className="team-split__tag">Activator</span>
             </div>
             <Link href="/about" className="team-split__link">Meet Dr. Travis &rarr;</Link>
@@ -253,12 +255,11 @@ export default function HomePageContent() {
             {[
               { num: '01', title: 'Chiropractic Adjustments', href: '/spinal-correction-new-braunfels', preview: 'Precise spinal adjustments to correct misalignments and restore nervous system function.', desc: 'Your nervous system controls every function in your body. When vertebrae shift out of alignment, they interfere with nerve signals -- leading to pain, dysfunction, and disease. Our adjustments are precise, gentle, and designed to restore your body\'s ability to heal itself.', bullets: ['Back and neck pain relief', 'Headache and migraine reduction', 'Improved mobility and posture', 'Enhanced nervous system function'], icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 4c-2 5-3 9-5 14s-2 9 0 12c1 2 3 4 5 5 2-1 4-3 5-5 2-3 2-7 0-12S22 9 20 4Z" /></svg>, imgLabel: 'Adjustment Photo', open: true },
               { num: '02', title: 'Advanced Spinal Correction', href: '/spinal-correction-new-braunfels', preview: 'Structural correction addressing root causes, not just symptoms.', desc: 'Beyond basic adjustments, advanced spinal correction uses precise imaging and structural analysis to identify and correct the root cause of spinal misalignment. Available with both Dr. Rachel and Dr. Travis -- a personalized plan to restore your spine\'s natural curve and function.', icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="8" y="4" width="24" height="32" rx="4" /><path d="M14 14h12M14 20h12M14 26h8" /><circle cx="20" cy="8" r="2" /></svg>, imgLabel: 'Spinal Correction Photo' },
-              { num: '03', title: <>Prenatal Chiropractic<span className="svc-accordion__badge svc-accordion__badge--rachel">Dr. Rachel</span></>, href: '/prenatal-chiropractic-care-new-braunfels', preview: 'Safe, gentle care supporting healthy pregnancy and delivery.', desc: 'Dr. Rachel is pre- and peri-natal certified, trained in Webster technique and advanced pregnancy-specific adjustments. She helps expecting mothers maintain alignment, reduce pain, and prepare their bodies for delivery.', bullets: ['Webster technique certified', 'Lower back and pelvic pain relief', 'Optimal fetal positioning support', 'Postpartum recovery care'], icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><ellipse cx="20" cy="22" rx="8" ry="10" /><path d="M20 12V6M17 8h6" /><circle cx="20" cy="22" r="3" /></svg>, imgLabel: 'Prenatal Care Photo' },
-              { num: '04', title: <>Pediatric Chiropractic<span className="svc-accordion__badge svc-accordion__badge--rachel">Dr. Rachel</span></>, href: '/pediatric-chiropractic-care-new-braunfels', preview: 'Gentle adjustments for infants through teens.', desc: 'Children respond beautifully to chiropractic. Dr. Rachel uses age-appropriate, gentle techniques to support healthy development, improve nervous system function, and address common childhood issues from colic to scoliosis.', icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="20" cy="12" r="6" /><path d="M14 22c-2 3-2 6 0 10h12c2-4 2-7 0-10" /></svg>, imgLabel: 'Pediatric Care Photo' },
-              { num: '05', title: <>Corrective Exercises<span className="svc-accordion__badge svc-accordion__badge--travis">Dr. Travis</span></>, href: '/corrective-exercises-new-braunfels', preview: 'Custom programs to strengthen, correct posture, and maintain results.', desc: 'As a certified personal trainer and corrective exercise specialist, Dr. Travis designs custom rehabilitation and strengthening programs. His military background means precision, structure, and accountability -- especially for veterans and first responders recovering from the physical demands of service.', icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="20" cy="10" r="4" /><path d="M20 14v8M14 28l6-6 6 6M12 34h16" /><path d="M26 18l4 4M14 18l-4 4" /></svg>, imgLabel: 'Exercise Rehab Photo' },
-              { num: '06', title: 'Massage Therapy', href: '/massage-therapy-new-braunfels', preview: 'Professional massage complementing chiropractic care.', desc: 'Our licensed massage therapists work alongside your chiropractor to release tension, improve circulation, and accelerate healing. An essential complement to your spinal correction plan.', icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 8c4 4 4 10 0 14M28 8c-4 4-4 10 0 14" /><ellipse cx="20" cy="20" rx="6" ry="10" /></svg>, imgLabel: 'Massage Therapy Photo' },
-              { num: '07', title: 'Nutritional Coaching', href: '/nutritional-coaching-new-braunfels', preview: 'Personalized nutrition based on the 5 Essentials.', desc: 'Healing starts from the inside. Both doctors are certified in MaxLiving nutrition protocols, guiding you toward foods and supplements that reduce inflammation, support healing, and fuel your body\'s natural recovery process.', icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 32V16l8-8 8 8v16" /><path d="M18 32v-8h4v8" /><circle cx="20" cy="20" r="3" /></svg>, imgLabel: 'Nutrition Photo' },
-              { num: '08', title: 'Detoxification', href: '/detoxification-programs-new-braunfels', preview: 'Guided detox programs to reduce toxic burden.', desc: 'Environmental toxins accumulate in your body over time, contributing to inflammation, fatigue, and disease. Our guided detox programs help you systematically reduce toxic burden and restore your body\'s natural detoxification pathways.', icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 8v24M14 14l6-6 6 6" /><circle cx="20" cy="28" r="6" /><path d="M17 28h6" /></svg>, imgLabel: 'Detox Program Photo' },
+              { num: '03', title: 'Prenatal Chiropractic', href: '/prenatal-chiropractic-care-new-braunfels', preview: 'Safe, gentle care supporting healthy pregnancy and delivery.', desc: 'Both Dr. Rachel and Dr. Travis are certified in prenatal chiropractic techniques. They help expecting mothers maintain alignment, reduce pain, and prepare their bodies for delivery.', bullets: ['Webster technique', 'Lower back and pelvic pain relief', 'Optimal fetal positioning support', 'Postpartum recovery care'], icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><ellipse cx="20" cy="22" rx="8" ry="10" /><path d="M20 12V6M17 8h6" /><circle cx="20" cy="22" r="3" /></svg>, imgLabel: 'Prenatal Care Photo' },
+              { num: '04', title: 'Pediatric Chiropractic', href: '/pediatric-chiropractic-care-new-braunfels', preview: 'Gentle adjustments for infants through teens.', desc: 'Children respond beautifully to chiropractic. Both doctors use age-appropriate, gentle techniques to support healthy development, improve nervous system function, and address common childhood concerns from colic to scoliosis.', icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="20" cy="12" r="6" /><path d="M14 22c-2 3-2 6 0 10h12c2-4 2-7 0-10" /></svg>, imgLabel: 'Pediatric Care Photo' },
+              { num: '05', title: 'Corrective Exercises', href: '/corrective-exercises-new-braunfels', preview: 'Custom programs to strengthen, correct posture, and maintain results.', desc: 'Both doctors design custom rehabilitation and strengthening programs. Dr. Travis brings his military background and certified personal trainer expertise, providing precision, structure, and accountability -- especially for veterans and first responders recovering from the physical demands of service.', icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="20" cy="10" r="4" /><path d="M20 14v8M14 28l6-6 6 6M12 34h16" /><path d="M26 18l4 4M14 18l-4 4" /></svg>, imgLabel: 'Exercise Rehab Photo' },
+              { num: '06', title: 'Nutritional Coaching', href: '/nutritional-coaching-new-braunfels', preview: 'Personalized nutrition based on the 5 Essentials.', desc: 'Healing starts from the inside. Both doctors are certified in MaxLiving nutrition protocols, guiding you toward foods and supplements that reduce inflammation, support healing, and fuel your body\'s natural recovery process.', icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 32V16l8-8 8 8v16" /><path d="M18 32v-8h4v8" /><circle cx="20" cy="20" r="3" /></svg>, imgLabel: 'Nutrition Photo' },
+              { num: '07', title: 'Detoxification', href: '/detoxification-programs-new-braunfels', preview: 'Guided detox programs to reduce toxic burden.', desc: 'Environmental toxins accumulate in your body over time, contributing to inflammation, fatigue, and disease. Our guided detox programs help you systematically reduce toxic burden and restore your body\'s natural detoxification pathways.', icon: <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 8v24M14 14l6-6 6 6" /><circle cx="20" cy="28" r="6" /><path d="M17 28h6" /></svg>, imgLabel: 'Detox Program Photo' },
             ].map((svc, i) => (
               <div key={i} className={`svc-accordion${svc.open ? ' open' : ''}`} data-svc="">
                 <div className="svc-accordion__border-active"></div>
@@ -397,18 +398,11 @@ export default function HomePageContent() {
             </h2>
           </div>
           <div className="testimonials__grid">
-            {[
-              { text: '"The entire team is incredible. Dr. Rachel made my pregnancy so much more comfortable, and my delivery was the smoothest of all three kids. This place is special."', author: 'Sarah M.', delay: 0 },
-              { text: '"As a veteran, I was skeptical. Dr. Travis gets it -- he understands what years of service do to your body. Best decision I\'ve made for my health in a long time."', author: 'James R.', delay: .1 },
-              { text: '"We bring our whole family -- from our 6-month-old to my mother-in-law. The whole-body approach with the 5 Essentials has changed how we think about health."', author: 'The Hernandez Family', delay: .2 },
-            ].map((t, i) => (
-              <div key={i} className="testi-card reveal" style={t.delay ? { transitionDelay: `${t.delay}s` } : undefined}>
-                <div className="testi-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p className="testi-card__text">{t.text}</p>
-                <div className="testi-card__author">{t.author}</div>
-                <div className="testi-card__source">Google Review</div>
-              </div>
-            ))}
+            <div className="testi-card reveal" style={{ textAlign: 'center', gridColumn: '1 / -1' }}>
+              <div className="testi-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p className="testi-card__text" style={{ fontSize: '20px' }}>5.0 Perfect Rating from 67 families. Real patient reviews coming soon from our verified Google Business Profile.</p>
+              <div className="testi-card__source">Google Reviews &middot; 5.0 Stars</div>
+            </div>
           </div>
         </div>
       </section>
@@ -455,11 +449,11 @@ export default function HomePageContent() {
             <div className="faq__list">
               {[
                 { q: "What's included in a new patient visit?", a: 'Your first visit includes a comprehensive consultation, examination, X-rays if needed, and your first adjustment. We take the time to understand your health history, identify root causes, and develop a personalized care plan based on the 5 Essentials framework.' },
-                { q: 'Can I choose which doctor I see?', a: 'Absolutely. When you book, you can request Dr. Rachel, Dr. Travis, or select "No Preference" and we\'ll match you based on your needs. Dr. Rachel specializes in prenatal and pediatric care, while Dr. Travis focuses on corrective exercise and military/first responder wellness.' },
+                { q: 'Can I choose which doctor I see?', a: 'Absolutely. When you book, you can request Dr. Rachel, Dr. Travis, or select "No Preference" and we\'ll match you based on your needs. Both doctors are certified in structural correction, prenatal care, and pediatric care.' },
                 { q: 'Is chiropractic safe during pregnancy?', a: 'Yes -- and highly recommended. Dr. Rachel is pre- and peri-natal certified with advanced training in pregnancy-specific techniques. Gentle adjustments help relieve back pain, improve pelvic alignment, and support optimal fetal positioning for a smoother delivery.' },
-                { q: 'Do you treat military members and first responders?', a: 'This is personal to us. Dr. Travis served 5 years in the U.S. Army and understands the physical toll of service. He combines chiropractic with corrective exercise to help veterans and first responders recover from the demands they\'ve placed on their bodies.' },
-                { q: 'What are the MaxLiving 5 Essentials?', a: 'The 5 Essentials are the foundation of MaxLiving care: Core Chiropractic, Nutrition, Mindset, Oxygen & Exercise, and Minimizing Toxins. Instead of treating symptoms, we address all five areas to help your body heal, function, and thrive at its best.' },
-                { q: 'Do you treat babies and children?', a: 'Yes! Dr. Rachel treats patients from infancy through their senior years. Pediatric adjustments are incredibly gentle -- using no more pressure than you\'d use to test a tomato. Children respond quickly to care and it supports healthy nervous system development from the start.' },
+                { q: 'Do you help military members and first responders?', a: 'This is personal to us. Dr. Travis served 5 years in the U.S. Army and understands the physical toll of service. Both doctors combine chiropractic with corrective exercise to help veterans and first responders recover from the demands they\'ve placed on their bodies.' },
+                { q: 'What are the MaxLiving 5 Essentials?', a: 'The 5 Essentials are the foundation of MaxLiving care: Core Chiropractic, Nutrition, Mindset, Oxygen & Exercise, and Minimizing Toxins. Instead of masking symptoms, we address all five areas to remove interference and help your body heal, function, and thrive at its best.' },
+                { q: 'Do you see babies and children?', a: 'Yes! Both Dr. Rachel and Dr. Travis see patients from infancy through their senior years. Pediatric adjustments are incredibly gentle -- using no more pressure than you\'d use to test a tomato. Children respond quickly to care and it supports healthy nervous system development from the start.' },
                 { q: 'Do you accept insurance? CareCredit?', a: 'We accept CareCredit and work with many insurance providers. Contact our office at (830) 255-4350 to verify your specific coverage. We believe cost should never be a barrier to health, and we\'ll work with you to find a solution.' },
                 { q: 'What is advanced spinal correction?', a: 'Advanced spinal correction goes beyond standard adjustments. Using precise imaging and structural analysis, we identify the root cause of spinal misalignment and develop a targeted correction plan. The goal is lasting structural change -- not temporary relief.' },
               ].map((faq, i) => (

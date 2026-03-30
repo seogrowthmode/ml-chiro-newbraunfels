@@ -20,18 +20,7 @@ export const metadata: Metadata = {
   },
 }
 
-const reviews = [
-  { variant: 'masonry__item--rachel', text: '"Dr. Rachel made my third trimester bearable. I was in so much pain and she was gentle, knowledgeable, and genuinely caring."', author: 'Michelle T.', tag: 'About Dr. Rachel' },
-  { variant: 'masonry__item--travis', text: '"As a retired Army sergeant, I was skeptical about chiropractic. Dr. Travis changed my mind in one visit. He gets it."', author: 'James R.', tag: 'About Dr. Travis' },
-  { variant: '', text: '"The whole office is warm and welcoming. From the front desk to both doctors -- you feel like family the moment you walk in."', author: 'Laura S.', tag: 'Google Review' },
-  { variant: 'masonry__item--rachel', text: '"My daughter had colic for months. Two visits with Dr. Rachel and she was sleeping through the night. I cried."', author: 'Amanda K.', tag: 'About Dr. Rachel' },
-  { variant: 'masonry__item--travis', text: '"I\'m a firefighter and my body takes a beating. Dr. Travis understands the demands of the job and has helped me stay on the truck."', author: 'Carlos M.', tag: 'About Dr. Travis' },
-  { variant: '', text: '"We drive from San Marcos every week because the care is that good. Worth every mile."', author: 'David & Kim H.', tag: 'Google Review' },
-  { variant: 'masonry__item--rachel', text: '"I was told I\'d need surgery for my back. Dr. Rachel suggested we try correction first. Six months later -- no surgery, no pain."', author: 'Patricia W.', tag: 'About Dr. Rachel' },
-  { variant: 'masonry__item--travis', text: '"Dr. Travis designed an exercise program that finally fixed my posture after 20 years of desk work. The guy is precise."', author: 'Michael B.', tag: 'About Dr. Travis' },
-  { variant: '', text: '"The 5 Essentials approach changed how our family thinks about health. It\'s not just adjustments -- it\'s a lifestyle."', author: 'The Garcia Family', tag: 'Google Review' },
-  { variant: 'masonry__item--rachel', text: '"Being pregnant with twins was incredibly hard on my body. Dr. Rachel\'s care made the difference between suffering and comfort."', author: 'Jessica L.', tag: 'About Dr. Rachel' },
-]
+const reviews: { variant: string; text: string; author: string; tag: string }[] = []
 
 export default function TestimonialsPage() {
   return (
@@ -42,11 +31,10 @@ export default function TestimonialsPage() {
 
       <section className="page-section page-section--cream">
         <div className="container">
-          <div className="featured-review reveal">
+          <div className="featured-review reveal" style={{ textAlign: 'center' }}>
             <div className="featured-review__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p className="featured-review__quote">&ldquo;We came to Dr. Rachel during my wife&apos;s pregnancy and never left. Now our whole family &mdash; including our two kids &mdash; sees both doctors. Dr. Travis helped me with years of back pain from my time in the service, and Dr. Rachel has been incredible with our children. This isn&apos;t just a chiropractor&apos;s office &mdash; it&apos;s where our family goes to stay healthy.&rdquo;</p>
-            <p className="featured-review__author">&mdash; The Martinez Family</p>
-            <p className="featured-review__source">Google Review &middot; Verified</p>
+            <p className="featured-review__quote" style={{ fontSize: '22px' }}>Verified patient reviews coming soon. We are pulling real reviews from our Google Business Profile to share authentic patient stories. In the meantime, you can read all 67 five-star reviews directly on Google.</p>
+            <p className="featured-review__source">5.0 Stars &middot; 67 Google Reviews</p>
             <div className="featured-review__line"></div>
           </div>
         </div>
@@ -57,16 +45,7 @@ export default function TestimonialsPage() {
           <div style={{ textAlign: 'center', marginBottom: '48px' }} className="reveal">
             <span className="eyebrow">Patient Stories</span>
             <h2><span style={{ display: 'block', fontSize: '32px', fontWeight: 400, color: 'var(--charcoal)', lineHeight: 1.3 }}>What our families</span><span style={{ display: 'block', fontSize: '42px', fontWeight: 800, color: 'var(--charcoal)', lineHeight: 1.2 }}>are saying.</span></h2>
-          </div>
-          <div className="masonry reveal">
-            {reviews.map((r, i) => (
-              <div key={i} className={`masonry__item ${r.variant}`}>
-                <div className="masonry__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p className="masonry__text">{r.text}</p>
-                <p className="masonry__author">&mdash; {r.author}</p>
-                <p className="masonry__tag">{r.tag}</p>
-              </div>
-            ))}
+            <p style={{ fontSize: '17px', color: 'var(--text-secondary)', marginTop: '16px', maxWidth: '600px', margin: '16px auto 0' }}>We are in the process of verifying and importing real patient reviews from our Google Business Profile. Check back soon, or read our reviews directly on Google.</p>
           </div>
         </div>
       </section>

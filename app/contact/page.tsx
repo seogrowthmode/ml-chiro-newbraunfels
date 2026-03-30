@@ -106,13 +106,13 @@ export default function ContactPage() {
           <div className="doc-quick-grid">
             <div className="doc-quick-card doc-quick-card--rachel reveal">
               <p className="doc-quick-card__name">Dr. Rachel Diestel, D.C.</p>
-              <p className="doc-quick-card__specialties">Prenatal &middot; Pediatric &middot; Nutrition</p>
+              <p className="doc-quick-card__specialties">Structural Correction &middot; Prenatal &middot; Pediatric &middot; Nutrition</p>
               <a href="mailto:dr.rachel@maxlivingnewbraunfels.com" className="doc-quick-card__email">dr.rachel@maxlivingnewbraunfels.com</a>
               <Link href="/schedule" className="doc-quick-card__link">Book with Dr. Rachel &rarr;</Link>
             </div>
             <div className="doc-quick-card doc-quick-card--travis reveal" data-delay="100">
               <p className="doc-quick-card__name">Dr. Travis Diestel, D.C.</p>
-              <p className="doc-quick-card__specialties">Corrective Exercise &middot; Military &middot; Activator</p>
+              <p className="doc-quick-card__specialties">Structural Correction &middot; Prenatal &middot; Pediatric &middot; Corrective Exercise</p>
               <a href="mailto:info@maxlivingnewbraunfels.com" className="doc-quick-card__email">info@maxlivingnewbraunfels.com</a>
               <Link href="/schedule" className="doc-quick-card__link">Book with Dr. Travis &rarr;</Link>
             </div>

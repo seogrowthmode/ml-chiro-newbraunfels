@@ -3,11 +3,11 @@ import HomePageContent from '@/components/HomePageContent'
 
 export const metadata: Metadata = {
   title: 'Chiropractor New Braunfels TX | MaxLiving',
-  description: 'Top-rated chiropractor in New Braunfels, TX. Dr. Rachel and Dr. Travis Diestel offer prenatal, pediatric, and corrective chiropractic care. 5.0 stars, 67 reviews. $49 new patient special. Call (830) 255-4350.',
+  description: 'Top-rated chiropractor in New Braunfels, TX. Dr. Rachel and Dr. Travis Diestel offer prenatal, pediatric, and corrective chiropractic care. 5.0 stars, 67 reviews. $185 new patient special. Call (830) 255-4350.',
   alternates: { canonical: 'https://ml-chiro-newbraunfels.vercel.app' },
   openGraph: {
     title: 'Chiropractor New Braunfels TX | MaxLiving',
-    description: 'Husband-wife chiropractor team in New Braunfels, TX. Prenatal, pediatric, corrective exercise, veteran care. 5.0 stars, 67 reviews. New Patient Special: $49.',
+    description: 'Husband-wife chiropractor team in New Braunfels, TX. Prenatal, pediatric, corrective exercise, veteran care. 5.0 stars, 67 reviews. New Patient Special: $185.',
     url: 'https://ml-chiro-newbraunfels.vercel.app',
     siteName: 'MaxLiving Chiropractic New Braunfels',
     locale: 'en_US',

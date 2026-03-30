@@ -15,7 +15,6 @@ const serviceItems = [
   { href: '/pediatric-chiropractic-care-new-braunfels', label: 'Pediatric Chiropractic' },
   { href: '/nutritional-coaching-new-braunfels', label: 'Nutrition' },
   { href: '/corrective-exercises-new-braunfels', label: 'Corrective Exercises' },
-  { href: '/massage-therapy-new-braunfels', label: 'Massage Therapy' },
   { href: '/detoxification-programs-new-braunfels', label: 'Detoxification' },
 ]
 

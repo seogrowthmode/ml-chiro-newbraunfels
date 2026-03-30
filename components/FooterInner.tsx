@@ -31,7 +31,6 @@ export default function FooterInner({ variant = 'inner-full' }: FooterInnerProps
               <Link href="/prenatal-chiropractic-care-new-braunfels" className="footer__link">Prenatal Chiropractic</Link>
               <Link href="/pediatric-chiropractic-care-new-braunfels" className="footer__link">Pediatric Chiropractic</Link>
               <Link href="/corrective-exercises-new-braunfels" className="footer__link">Corrective Exercises</Link>
-              <Link href="/massage-therapy-new-braunfels" className="footer__link">Massage Therapy</Link>
               <Link href="/nutritional-coaching-new-braunfels" className="footer__link">Nutritional Coaching</Link>
               <Link href="/detoxification-programs-new-braunfels" className="footer__link">Detoxification</Link>
             </div>
@@ -91,7 +90,6 @@ export default function FooterInner({ variant = 'inner-full' }: FooterInnerProps
             <Link href="/pediatric-chiropractic-care-new-braunfels" className="footer__link">Pediatric Chiropractic</Link>
             <Link href="/corrective-exercises-new-braunfels" className="footer__link">Corrective Exercises</Link>
             <Link href="/nutritional-coaching-new-braunfels" className="footer__link">Nutritional Coaching</Link>
-            <Link href="/massage-therapy-new-braunfels" className="footer__link">Massage Therapy</Link>
             <Link href="/detoxification-programs-new-braunfels" className="footer__link">Detoxification</Link>
           </div>
           {variant === 'inner-full' ? (

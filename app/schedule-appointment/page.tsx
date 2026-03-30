@@ -6,11 +6,11 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Book Online',
-  description: 'Book your chiropractic appointment online with Dr. Rachel or Dr. Travis Diestel in New Braunfels, TX. New patient special: $49. Call (830) 255-4350.',
+  description: 'Book your chiropractic appointment online with Dr. Rachel or Dr. Travis Diestel in New Braunfels, TX. New patient special: $185. Call (830) 255-4350.',
   alternates: { canonical: 'https://ml-chiro-newbraunfels.vercel.app/schedule-appointment' },
   openGraph: {
     title: 'Book Online | MaxLiving New Braunfels',
-    description: 'Book your appointment online. New patient special: $49. Consultation, exam, X-rays if needed, and first adjustment.',
+    description: 'Book your appointment online. New patient special: $185. Consultation, exam, X-rays if needed, and first adjustment.',
     url: 'https://ml-chiro-newbraunfels.vercel.app/schedule-appointment',
     siteName: 'MaxLiving Chiropractic New Braunfels',
     type: 'website',
@@ -38,7 +38,7 @@ export default function ScheduleAppointmentPage() {
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '32px' }}>
             <span className="eyebrow">Online Booking</span>
             <p style={{ fontSize: '15px', color: 'var(--text-secondary)', marginTop: '8px' }}>
-              New Patient Special: <strong style={{ color: 'var(--charcoal)' }}>$49</strong> -- Consultation, exam, X-rays (if needed), and first adjustment.
+              New Patient Special: <strong style={{ color: 'var(--charcoal)' }}>$185</strong> -- Consultation, exam, X-rays (if needed), and first adjustment.
             </p>
           </div>
           <div style={{ background: 'white', borderRadius: '16px', padding: '24px', boxShadow: '0 2px 16px rgba(0,0,0,.06)', minHeight: '600px' }}>

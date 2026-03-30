@@ -95,8 +95,8 @@ export default function ServicePageTemplate(props: ServicePageProps) {
       {/* Conditions */}
       <section className="page-section page-section--stone">
         <div className="container" style={{ textAlign: 'center' }}>
-          <span className="eyebrow reveal">Conditions We Treat</span>
-          <h2 className="reveal" style={{ fontSize: '42px', fontWeight: 800, color: 'var(--charcoal)', marginBottom: '32px' }}>Common conditions.</h2>
+          <span className="eyebrow reveal">Conditions We Help With</span>
+          <h2 className="reveal" style={{ fontSize: '42px', fontWeight: 800, color: 'var(--charcoal)', marginBottom: '32px' }}>Common conditions we help with.</h2>
           <div className="tag-cloud reveal" style={{ justifyContent: 'center' }}>
             {props.conditions.map((c, i) => <span key={i} className="tag">{c}</span>)}
           </div>

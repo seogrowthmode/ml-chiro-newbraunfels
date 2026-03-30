@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     default: 'Chiropractor New Braunfels TX | MaxLiving',
     template: '%s | MaxLiving New Braunfels',
   },
-  description: 'Husband-wife chiropractor team in New Braunfels, TX. Dr. Rachel specializes in prenatal & pediatric care. Dr. Travis, a US Army veteran, focuses on corrective exercise & military wellness. 5.0 Perfect Google Rating. (830) 255-4350.',
+  description: 'Husband-wife chiropractor team in New Braunfels, TX. Dr. Rachel and Dr. Travis Diestel offer prenatal, pediatric, and corrective chiropractic care. Both certified in structural correction. 5.0 Perfect Google Rating. (830) 255-4350.',
   alternates: { canonical: BASE_URL },
   openGraph: {
     title: 'Chiropractor New Braunfels TX | MaxLiving',
-    description: 'Husband-wife chiropractor team in New Braunfels, TX. Prenatal, pediatric, corrective exercise, veteran care. 5.0 stars, 67 reviews. New Patient Special: $49.',
+    description: 'Husband-wife chiropractor team in New Braunfels, TX. Prenatal, pediatric, corrective exercise, veteran care. 5.0 stars, 67 reviews. New Patient Special: $185.',
     url: BASE_URL,
     siteName: 'MaxLiving Chiropractic New Braunfels',
     locale: 'en_US',

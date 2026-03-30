@@ -27,14 +27,14 @@ export const siteConfig = {
   googleRating: 5.0,
   googleReviews: 67,
   franchise: 'MaxLiving Health Center',
-  tagline: 'Inspiring people to honor the wisdom of the body and live a life free from interference.',
+  tagline: 'The best doctor lives inside of you -- we just remove the interference and let your body do what it\'s designed to do.',
   doctors: {
     rachel: {
       name: 'Dr. Rachel Diestel, D.C.',
       shortName: 'Dr. Rachel',
       education: 'Parker University',
       certifications: ['Advanced Spinal Correction', 'Nutrition', 'Exercise', 'Detoxification', 'Pre- and Peri-natal Techniques'],
-      specialties: ['Prenatal Care', 'Pediatric Care', 'Nutrition', 'Detox'],
+      specialties: ['Structural Correction', 'Prenatal Care', 'Pediatric Care', 'Nutrition', 'Detox'],
       email: 'dr.rachel@maxlivingnewbraunfels.com',
     },
     travis: {
@@ -42,7 +42,7 @@ export const siteConfig = {
       shortName: 'Dr. Travis',
       education: 'Parker University',
       certifications: ['Advanced Spinal Correction', 'Level 2 Activator', 'Nutrition', 'Exercise', 'Detoxification'],
-      specialties: ['Corrective Exercise', 'Military/First Responder', 'Spinal Correction', 'Activator'],
+      specialties: ['Structural Correction', 'Prenatal Care', 'Pediatric Care', 'Corrective Exercise', 'Activator'],
       email: 'info@maxlivingnewbraunfels.com',
     },
   },
@@ -52,13 +52,12 @@ export const siteConfig = {
     { name: 'Pediatric Chiropractic', slug: 'pediatric-chiropractic-care-new-braunfels', href: '/pediatric-chiropractic-care-new-braunfels' },
     { name: 'Corrective Exercises', slug: 'corrective-exercises-new-braunfels', href: '/corrective-exercises-new-braunfels' },
     { name: 'Nutritional Coaching', slug: 'nutritional-coaching-new-braunfels', href: '/nutritional-coaching-new-braunfels' },
-    { name: 'Massage Therapy', slug: 'massage-therapy-new-braunfels', href: '/massage-therapy-new-braunfels' },
     { name: 'Detoxification', slug: 'detoxification-programs-new-braunfels', href: '/detoxification-programs-new-braunfels' },
   ],
   conditions: [
-    { name: 'Back Pain', slug: 'back-pain-treatment-new-braunfels', href: '/back-pain-treatment-new-braunfels' },
-    { name: 'Neck Pain', slug: 'neck-pain-treatment-new-braunfels', href: '/neck-pain-treatment-new-braunfels' },
-    { name: 'Sciatica', slug: 'sciatica-treatment-new-braunfels', href: '/sciatica-treatment-new-braunfels' },
-    { name: 'Headaches & Migraines', slug: 'headache-treatment-new-braunfels', href: '/headache-treatment-new-braunfels' },
+    { name: 'Back Pain', slug: 'back-pain-relief-new-braunfels', href: '/back-pain-relief-new-braunfels' },
+    { name: 'Neck Pain', slug: 'neck-pain-relief-new-braunfels', href: '/neck-pain-relief-new-braunfels' },
+    { name: 'Sciatica', slug: 'sciatica-care-new-braunfels', href: '/sciatica-care-new-braunfels' },
+    { name: 'Headaches & Migraines', slug: 'headache-relief-new-braunfels', href: '/headache-relief-new-braunfels' },
   ],
 }

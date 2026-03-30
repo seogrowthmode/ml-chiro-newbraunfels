@@ -19,13 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/pediatric-chiropractic-care-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/corrective-exercises-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/nutritional-coaching-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE_URL}/massage-therapy-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/detoxification-programs-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Conditions
-    { url: `${BASE_URL}/back-pain-treatment-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/neck-pain-treatment-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/sciatica-treatment-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/headache-treatment-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/back-pain-relief-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/neck-pain-relief-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/sciatica-care-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/headache-relief-new-braunfels`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     // Schedule appointment (calendar embed)
     { url: `${BASE_URL}/schedule-appointment`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
   ]

@@ -70,7 +70,7 @@ export default function ConditionPageTemplate(props: ConditionPageProps) {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '48px' }} className="reveal">
             <span className="eyebrow">Your {props.breadcrumbLabel} Specialists</span>
-            <h2 style={{ fontSize: '32px', fontWeight: 400, color: 'var(--charcoal)', lineHeight: 1.3 }}>Two doctors. <span style={{ fontWeight: 800, fontSize: '40px', display: 'block' }}>Two specialties.</span></h2>
+            <h2 style={{ fontSize: '32px', fontWeight: 400, color: 'var(--charcoal)', lineHeight: 1.3 }}>Two doctors. <span style={{ fontWeight: 800, fontSize: '40px', display: 'block' }}>One complete approach.</span></h2>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', maxWidth: '900px', margin: '0 auto' }}>
             <div className="doctor-callout doctor-callout--rachel reveal">
@@ -114,7 +114,7 @@ export default function ConditionPageTemplate(props: ConditionPageProps) {
       <section className="page-section page-section--stone">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '40px' }} className="reveal">
-            <span className="eyebrow">Conditions We Treat</span>
+            <span className="eyebrow">Conditions We Help With</span>
             <h2 style={{ fontSize: '32px', fontWeight: 400, color: 'var(--charcoal)', lineHeight: 1.3 }}>Many forms of <span style={{ fontWeight: 800, fontSize: '40px', display: 'block' }}>this condition.</span></h2>
           </div>
           <div className="tag-cloud reveal" style={{ justifyContent: 'center' }}>{props.conditions.map((c, i) => <span key={i} className="tag">{c}</span>)}</div>
@@ -144,7 +144,7 @@ export default function ConditionPageTemplate(props: ConditionPageProps) {
 
       <section className="page-section page-section--cream">
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '40px' }} className="reveal"><span className="eyebrow">Related Conditions</span><h2 style={{ fontSize: '32px', fontWeight: 400, color: 'var(--charcoal)', lineHeight: 1.3 }}>We also <span style={{ fontWeight: 800 }}>treat.</span></h2></div>
+          <div style={{ textAlign: 'center', marginBottom: '40px' }} className="reveal"><span className="eyebrow">Related Conditions</span><h2 style={{ fontSize: '32px', fontWeight: 400, color: 'var(--charcoal)', lineHeight: 1.3 }}>We also <span style={{ fontWeight: 800 }}>help with.</span></h2></div>
           <div className="related-grid reveal">
             {props.relatedConditions.map((r, i) => (
               <Link key={i} href={r.href} className="related-card">

@@ -67,7 +67,6 @@ export default function SchemaOrg() {
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Prenatal Chiropractic' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pediatric Chiropractic' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Corrective Exercises' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Massage Therapy' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Nutritional Coaching' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Detoxification' } },
       ],

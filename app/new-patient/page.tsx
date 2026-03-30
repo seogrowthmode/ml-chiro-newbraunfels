@@ -14,7 +14,7 @@ const faqItems = [
   { q: 'How long is the first visit?', a: 'Plan for about 45-60 minutes. We take our time to understand your health history, perform a thorough exam, and discuss your care plan.' },
   { q: 'Do I need a referral?', a: 'No referral needed. You can book directly with either Dr. Rachel or Dr. Travis.' },
   { q: 'What should I bring?', a: 'Photo ID, insurance card (if applicable), and any recent imaging or medical records related to your condition.' },
-  { q: 'Can my whole family be seen?', a: 'Absolutely. Dr. Rachel treats from infancy through seniors, and Dr. Travis works with all ages. Many families book back-to-back appointments.' },
+  { q: 'Can my whole family be seen?', a: 'Absolutely. Both doctors see patients from infancy through seniors. Many families book back-to-back appointments.' },
   { q: 'Do you accept CareCredit?', a: 'Yes! CareCredit helps make care affordable with flexible payment plans. Apply online or ask our front desk.' },
   { q: 'What if I\'m nervous?', a: 'That\'s completely normal. Our team is warm, welcoming, and will walk you through every step. No surprises.' },
 ]
@@ -45,7 +45,7 @@ export default function NewPatientPage() {
       <section className="page-section page-section--charcoal">
         <div className="container" style={{ textAlign: 'center', maxWidth: '720px' }}>
           <span className="eyebrow reveal">New Patient Special</span>
-          <p className="reveal" style={{ fontSize: '56px', fontWeight: 900, color: 'var(--gold)', marginBottom: '12px', lineHeight: 1.1 }}>$49</p>
+          <p className="reveal" style={{ fontSize: '56px', fontWeight: 900, color: 'var(--gold)', marginBottom: '12px', lineHeight: 1.1 }}>$185</p>
           <p className="reveal" style={{ fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>Includes consultation, comprehensive exam, X-rays (if needed), and your first adjustment.</p>
           <p className="reveal" style={{ fontSize: '14px', fontWeight: 600, letterSpacing: '.5px', marginBottom: '36px', opacity: .55 }}>CareCredit accepted &middot; Most insurance welcome</p>
           <div className="reveal"><Link href="/schedule" className="btn btn--gold">Book My First Visit &rarr;</Link></div>
@@ -63,15 +63,15 @@ export default function NewPatientPage() {
             <div className="doc-card doc-card--rachel reveal">
               <div className="doc-card__photo">Dr. Rachel</div>
               <p className="doc-card__name">Dr. Rachel Diestel, D.C.</p>
-              <p className="doc-card__specs">Prenatal &middot; Pediatric &middot; Nutrition &middot; Detox</p>
-              <p className="doc-card__desc">Choose Dr. Rachel if you&apos;re pregnant, have children who need care, or want a gentle, nurturing approach to whole-family wellness.</p>
+              <p className="doc-card__specs">Structural Correction &middot; Prenatal &middot; Pediatric &middot; Nutrition &middot; Detox</p>
+              <p className="doc-card__desc">Both doctors offer all services. Dr. Rachel brings a gentle, nurturing approach rooted in her own health transformation.</p>
               <Link href="/team" className="doc-card__link doc-card__link--blue">Learn More About Dr. Rachel &rarr;</Link>
             </div>
             <div className="doc-card doc-card--travis reveal" data-delay="100">
               <div className="doc-card__photo">Dr. Travis</div>
               <p className="doc-card__name">Dr. Travis Diestel, D.C.</p>
-              <p className="doc-card__specs">Corrective Exercise &middot; Military/First Responder &middot; Activator</p>
-              <p className="doc-card__desc">Choose Dr. Travis if you&apos;re a veteran, first responder, athlete, or need corrective exercise and structural rehabilitation.</p>
+              <p className="doc-card__specs">Structural Correction &middot; Prenatal &middot; Pediatric &middot; Corrective Exercise &middot; Activator</p>
+              <p className="doc-card__desc">Both doctors offer all services. Dr. Travis brings military precision and corrective exercise expertise from his Army background.</p>
               <Link href="/team" className="doc-card__link doc-card__link--gold">Learn More About Dr. Travis &rarr;</Link>
             </div>
           </div>

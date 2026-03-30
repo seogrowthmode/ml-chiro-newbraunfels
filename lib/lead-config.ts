@@ -7,8 +7,8 @@ export const leadConfig = {
   ghlCalendarUrl: 'https://api.leadconnectorhq.com/widget/booking/ychhdjmugfocipqo9ypl',
   offer: {
     name: 'New Patient Special',
-    price: 49,
-    priceDisplay: '$49',
+    price: 185,
+    priceDisplay: '$185',
     includes: 'Consultation, comprehensive exam, X-rays (if needed), and first adjustment',
   },
   source: 'Website',
