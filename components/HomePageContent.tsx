@@ -398,10 +398,35 @@ export default function HomePageContent() {
             </h2>
           </div>
           <div className="testimonials__grid">
-            <div className="testi-card reveal" style={{ textAlign: 'center', gridColumn: '1 / -1' }}>
+            <div className="testi-card reveal">
               <div className="testi-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <p className="testi-card__text" style={{ fontSize: '20px' }}>5.0 Perfect Rating from 67 families. Real patient reviews coming soon from our verified Google Business Profile.</p>
-              <div className="testi-card__source">Google Reviews &middot; 5.0 Stars</div>
+              <p className="testi-card__text">&ldquo;Dr. Travis &amp; Dr. Rachael are wonderful, very helpful, fun loving people. In just 4 weeks my improvements have been phenomenal. The receptionist Ms. JoJo is awesome and helpful with a beautiful smile and hugs.&rdquo;</p>
+              <div className="testi-card__author">Kathleen A.</div>
+              <div className="testi-card__source">Google Review</div>
+            </div>
+            <div className="testi-card reveal">
+              <div className="testi-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p className="testi-card__text">&ldquo;I was also educated about my body which is very important. The vibe and energy here impressed me greatly. Dr. Travis is divinely sent with a compassionate healing approach.&rdquo;</p>
+              <div className="testi-card__author">Kristy T.</div>
+              <div className="testi-card__source">Google Review</div>
+            </div>
+            <div className="testi-card reveal">
+              <div className="testi-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p className="testi-card__text">&ldquo;The most caring and knowledgeable team of doctors in the area. They care for whole families. I highly recommend their workshops and spinal care expertise -- top notch.&rdquo;</p>
+              <div className="testi-card__author">Dr. Josh B.</div>
+              <div className="testi-card__source">Google Review</div>
+            </div>
+            <div className="testi-card reveal">
+              <div className="testi-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p className="testi-card__text">&ldquo;I was impressed by the thorough explanations during my initial appointment. As a fellow veteran, Dr. Travis&apos;s military background added an extra layer of trust.&rdquo;</p>
+              <div className="testi-card__author">Danielle E.</div>
+              <div className="testi-card__source">Google Review</div>
+            </div>
+            <div className="testi-card reveal">
+              <div className="testi-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p className="testi-card__text">&ldquo;The MaxLiving team is incredible. It makes my day to see how excited and full of life the staff are. The information on whole health goes above and beyond typical chiropractic care.&rdquo;</p>
+              <div className="testi-card__author">David A.</div>
+              <div className="testi-card__source">Google Review</div>
             </div>
           </div>
         </div>
