@@ -12,25 +12,25 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // Old service short URLs
-      { source: '/services/spinal-correction', destination: '/spinal-correction-new-braunfels', permanent: true },
-      { source: '/services/prenatal', destination: '/prenatal-chiropractic-care-new-braunfels', permanent: true },
-      { source: '/services/pediatric', destination: '/pediatric-chiropractic-care-new-braunfels', permanent: true },
-      { source: '/services/nutrition', destination: '/nutritional-coaching-new-braunfels', permanent: true },
-      { source: '/services/corrective-exercises', destination: '/corrective-exercises-new-braunfels', permanent: true },
-      { source: '/services/detox', destination: '/detoxification-programs-new-braunfels', permanent: true },
+      { source: '/services/spinal-correction', destination: '/spinal-correction-new-braunfels', statusCode: 301 },
+      { source: '/services/prenatal', destination: '/prenatal-chiropractic-care-new-braunfels', statusCode: 301 },
+      { source: '/services/pediatric', destination: '/pediatric-chiropractic-care-new-braunfels', statusCode: 301 },
+      { source: '/services/nutrition', destination: '/nutritional-coaching-new-braunfels', statusCode: 301 },
+      { source: '/services/corrective-exercises', destination: '/corrective-exercises-new-braunfels', statusCode: 301 },
+      { source: '/services/detox', destination: '/detoxification-programs-new-braunfels', statusCode: 301 },
       // Old condition short URLs
-      { source: '/conditions/back-pain', destination: '/back-pain-relief-new-braunfels', permanent: true },
-      { source: '/conditions/neck-pain', destination: '/neck-pain-relief-new-braunfels', permanent: true },
-      { source: '/conditions/sciatica', destination: '/sciatica-care-new-braunfels', permanent: true },
-      { source: '/conditions/headaches', destination: '/headache-relief-new-braunfels', permanent: true },
+      { source: '/conditions/back-pain', destination: '/back-pain-relief-new-braunfels', statusCode: 301 },
+      { source: '/conditions/neck-pain', destination: '/neck-pain-relief-new-braunfels', statusCode: 301 },
+      { source: '/conditions/sciatica', destination: '/sciatica-care-new-braunfels', statusCode: 301 },
+      { source: '/conditions/headaches', destination: '/headache-relief-new-braunfels', statusCode: 301 },
       // 301 redirects from old "treatment" URLs to new "relief/care" URLs
-      { source: '/back-pain-treatment-new-braunfels', destination: '/back-pain-relief-new-braunfels', permanent: true },
-      { source: '/neck-pain-treatment-new-braunfels', destination: '/neck-pain-relief-new-braunfels', permanent: true },
-      { source: '/sciatica-treatment-new-braunfels', destination: '/sciatica-care-new-braunfels', permanent: true },
-      { source: '/headache-treatment-new-braunfels', destination: '/headache-relief-new-braunfels', permanent: true },
+      { source: '/back-pain-treatment-new-braunfels', destination: '/back-pain-relief-new-braunfels', statusCode: 301 },
+      { source: '/neck-pain-treatment-new-braunfels', destination: '/neck-pain-relief-new-braunfels', statusCode: 301 },
+      { source: '/sciatica-treatment-new-braunfels', destination: '/sciatica-care-new-braunfels', statusCode: 301 },
+      { source: '/headache-treatment-new-braunfels', destination: '/headache-relief-new-braunfels', statusCode: 301 },
       // Massage removed -- redirect to homepage
-      { source: '/massage-therapy-new-braunfels', destination: '/', permanent: true },
-      { source: '/services/massage', destination: '/', permanent: true },
+      { source: '/massage-therapy-new-braunfels', destination: '/', statusCode: 301 },
+      { source: '/services/massage', destination: '/', statusCode: 301 },
     ]
   },
 }
